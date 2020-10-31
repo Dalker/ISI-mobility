@@ -38,8 +38,8 @@ Note: the book starts with a quote R. Pirsig's Zen and the Art of Motorcycle Mai
 
 * Processor
   "computing part of the computer", designed to manipulate data as specified by
-  a sequence of instructions (/opcodes/ or **machine code**)
-  Each type of processor has its own **instruction set**
+  a sequence of instructions (/opcodes/ or /machine code/)
+  Each type of processor has its own /instruction set/
 ** microprocessor vs microcontroller vs SoC
    \mu-proc for desktop, \mu-controller for embedded system with memory on-chip,
    system-on-chip for embedded systems with separate memory
@@ -57,7 +57,7 @@ Note: the book starts with a quote R. Pirsig's Zen and the Art of Motorcycle Mai
    - memory is a linear (1d) array of storage locations
   exception: Harvard architecture (data and code are in separate spaces)
 * Memory addressing
-  memory space = address space, partitioned by **memory map**
+  memory space = address space, partitioned by /memory map/
   often I/O devices exist in the same address space as memory devices
   (memory-mapped I/O)
 * Buses
@@ -96,19 +96,19 @@ peripheral, end of some task from I/O device (e.g. key typed, mouse moved...)
 it's like a hardware-generated function call
 Interrupts have priorities.
 Effect: save state by pushing registers and program counter onto stack, then
-load **interrupt vector** into program counter, ie address at which the ISR
+load /interrupt vector/ into program counter, ie address at which the ISR
 (interrupt service routine) resides, the last instruction of which is a 
-**return from interrupt** instruction, causing to reload saved state from stack.
-NB: some processors have **shadow registers** for saving current state instead
+/return from interrupt/ instruction, causing to reload saved state from stack.
+NB: some processors have /shadow registers/ for saving current state instead
 of pushing to stack, saving memory access (and time), but only for a single (not
 multiple) interrupt.
 ** hardware interrupts
-the alternative is **busy waiting** or **polling**, ie the processor asking the
+the alternative is /busy waiting/ or /polling/, ie the processor asking the
 device's status register until it's ready (wasting processor's time).
 Simple processors have a single interrupt input for devices, thus triggering
 polling of all devices when one of them generates the interrupt - rather than
 continuously polling.
-More complex processors use **vectored interrupts**, where the interrupting
+More complex processors use /vectored interrupts/, where the interrupting
 device provides a vector with information about the request, reducing time (can
 provide just device id or more info if both device and processor permit - most
 processors don't)
