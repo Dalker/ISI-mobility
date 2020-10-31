@@ -1,0 +1,106 @@
+#+TITLE: SysML - notes de DK
+* sources:
+  - https://sysml.org/
+  - https://www.omg.org/spec/SysML/ et notamment un pdf "tutoriel" disponible dans omg.org
+* "taxonomie" de différents types de diagrammes
+  -> cf. png extrait du pdf "turoriel" d'omg.org:
+   "behaviour" (activity, sequence, state machine, use case)
+   "requirement"
+   "structure" (block definition, internal block [+ parametric], package)
+* Frame
+  tout diagramme doit avoir:
+  - un *contour* (frame)
+  - une *en-tête* en haut à gauche indiquant le type de diagramme, le type
+    d'élément modélisé et le nom de l'élément modélisé + éventuel nom
+    personalisé
+  - une *description* éventuelle avec no. de version, état d'achèvement
+    (completion status), évtl desc et refs
+* Structural diagrams
+** package diagram
+   organise le modèle; devrait utiliser la relation *import* pour des
+   sous-parties
+** block
+   - décrit un élément d'un système
+   - le bloc se subdivise en "compartiments" (rectangles emplilés) pour différents
+     caractéristiques
+   - based on UML Class + flow ports + value properties
+** property of a block
+   - part: block inside a composite block (which "owns" it): black diamond in
+     bdd, plain rectangle in ibd
+   - reference: block not owned by aggregating block: white diamond in bdd,
+     dashed rectangle in ibd
+   - value: number with units or probability distribution
+** block diagrams (2 types)
+   - block definition diagram: relationship between blocks (composition,
+     assoiciation, specialization) with usual uml triangle/diamonds
+   - internal block diagram: internal structure of one block (properties and
+     connectors) with ports (std or flow)
+** ports
+   - std (UML): 
+     closed circle = provided interface (provides the operation)
+     open circle = required interface (calls the operation)
+     when connected, simple line
+   - flow (SysML extension):
+     little square with arrow pointing out or in
+     when connected, black arrow in connecting line
+** parametrics
+   def of constaint: block with title, equation and def of parameters
+   param diagram: connectors between equations and parameters are white squares
+   inside the plain rectangles (params) or rounded rectangles (equations)
+* Behavioural diagrams
+** Activity diagram
+   - transformation from input to output via sequence of actions
+   - routing flows: fork / join ("and", black rectangle), decision / merge ("or",
+     white diamond)
+   - types of flow: 1) object / data, 2) control
+     1) enters/exits action via plain arrows through attached white squares on
+        the sides or above/below
+     2) enters/exits action via dashed arrows, vertically, directly to the
+        action's rounded rectangle
+   - unit of flow: "token", consumeed and produced by actionsj
+   - an action can invoke (be zooomed into) another activity
+   - inputs and outputs can be required or optional ("<<optional>>"), and
+     optionals can also be part of a continuous stream ("{stream}")
+   - action starts when token present in all control inputs and all required
+     inputs
+   - activity's in/out showed by rectangles crossing frame boundary
+   - special actions: accept event ("bookmark shape") and send signal ("arrow
+     shape")
+   - "swimlanes" can be <<allocate>>d to separate behaviour
+** Sequence diagram
+   for message based behaviour: flow of control, interaction between parts
+** State machines
+   show life cycle of a block
+   support behaviour based on events: change / time / signal
+** Use cases
+   functinality in terms of usage/goals by actors; no change to UML
+   heavy use of <<include>> and <<extend>>
+* Allocations and requirements
+** allocations
+  relations between models:
+  - behavioural (function to component)
+  - structural (logical to physical)
+  - software to hardware
+  - etc...
+  Activities may be explicitily allocated to structure via swim lanes (activity partitions)
+  <<allocate>> relation may be used instead (with dashed arrow or on
+  super-rectangle), and reverse with **allocatedFrom** label or property
+** requirements
+   relationships: DeriveReqt, Satisfy, Verify, Refine, Trace, Copy
+   client --> supplier relations: if supplier changes, client must adapt
+   (i.e. typically client implements something needed by supplier)
+* Connecting Model Elements
+  - allocation: *behaviour* (possibly swimlines) is/are allocated to *structure* blocks
+  - satisfaction: *structure* satisfies *requirements*
+  - parametrics: structure binds them, requirements verify them
+* Example: distiller problem -> see p 75 and forward (illustrates all types of diagram)
+* System Modeling Activities
+  - Analyze needs: causal analysis, mission use cases / scenarii, enterprise model
+  - Define System Requirements: system use cases / scenarii, elaborated context
+  - Define Logical Architecture: Logical decomposition, scenarii and subsystems
+  - Synthesize Allocated Architecture: Node diagram, HW/SW/Data arch, deployment
++ also:
+  - Optimize / Evaluate Alternatives (parametric diagram, etc.)
+  - Manage requirements (req't diagram and/or tables)
+  - Support Validation and Verification (test cases)
+* 2ème Exemple: système de sécurité de maison, p. 102 et suivantes

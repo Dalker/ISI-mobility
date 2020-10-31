@@ -1,0 +1,360 @@
+% Created 2020-10-31 sam 14:41
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Daniel Kessler}
+\date{\today}
+\title{Notes from "An Introduction to Computer Architecture"\\\medskip
+\large chapter 1 in "Designing Embedded Hardware, 2nd edition, by John Catsoulis" (notes taken while working for A. Sandoz' course "Introduction aux Systèmes Informatiques")}
+\hypersetup{
+ pdfauthor={Daniel Kessler},
+ pdftitle={Notes from "An Introduction to Computer Architecture"},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+Note: the book starts with a quote R. Pirsig's Zen and the Art of Motorcycle Maintenance ;-)
+
+\section{desktop computer vs embedded systems}
+\label{sec:org8dbefb4}
+multi-app vs single app, but both can have their software changed
+user-decided app in volaile memory vs single app in non-volatile memory
+
+\section{computer = data processor}
+\label{sec:orge7a3b01}
+reminder: all data is stored as numbers (binary)
+the computer is always moving and processing numbers
+memory for programs and data, both as numbers
+
+\section{Layers}
+\label{sec:org308dcdb}
+each layer usually communcates only with its immediate neighbours
+\begin{itemize}
+\item Desktop: Hardware < Firmware < OS < Applications
+\item Complex Embedded Computer: Hardware < Firmware < OS < Application(s)
+\item Simple Embedded System: Hardware < Application in Firmware
+\end{itemize}
+
+\subsection{Firmware}
+\label{sec:org82ea389}
+programs to initialize other hardware subsystems to a known state and
+configure computer for correct operation - stored permanently in computer's
+memory
+In particular, firmware contains the \textbf{bootloader} that reads the OS and places
+it in memory
+
+\subsection{OS}
+\label{sec:org0947885}
+controls operation; organizes use of memory, controls devices (kbd, screen,
+drives, \ldots{}) and often provides interface to user enabling them to run
+application programs and access files on disk; also provides software tools to
+applications enabling the to access the devices the OS controls
+
+\subsection{Application software (vs System software: everything below)}
+\label{sec:org0297035}
+boundary betweeen app and sys soft often blurred in embedded systems
+
+\section{Processor}
+\label{sec:org4434539}
+"computing part of the computer", designed to manipulate data as specified by
+a sequence of instructions (\textbf{\textbf{opcodes}} or \textbf{\textbf{machine code}})
+Each type of processor has its own \textbf{\textbf{instruction set}}
+\subsection{microprocessor vs microcontroller vs SoC}
+\label{sec:orgaaa091b}
+\(\mu\)-proc for desktop, \(\mu\)-controller for embedded system with memory on-chip,
+system-on-chip for embedded systems with separate memory
+\subsection{Von Neumann machine}
+\label{sec:org2a9387b}
+instructions read from memory; data read and written from/to memory
+a.k.a. control-flow computers (almost all current computers)
+specific characteristics:
+\begin{itemize}
+\item no real difference between data and instructions
+allows changing the instructions (treating them as data)
+\item data has no inherent meaning
+no distinction between a number representing a pixel or a character, e.g.
+\item data and instructions share the same memory
+instructions of a program may be treated as data by another program
+(e.g. by a compiler)
+\item memory is a linear (1d) array of storage locations
+\end{itemize}
+exception: Harvard architecture (data and code are in separate spaces)
+\section{Memory addressing}
+\label{sec:org64862b7}
+memory space = address space, partitioned by \textbf{\textbf{memory map}}
+often I/O devices exist in the same address space as memory devices
+(memory-mapped I/O)
+\section{Buses}
+\label{sec:orgb47c24f}
+bus = group of signal lines with a related function, with a "width" in bits
+usually, 3 buses: \textbf{address bus}, \textbf{data bus} and \textbf{control bus}
+(address from processor to memory, the other two bidirectional)
+control bus e.g. indicates from processor to memory if access is R or W,
+and from memory if valid address (or address error); also other lines usually
+for reset, interrupts and clock input
+\section{6 basic processor operations (or 4 if "mem=I/O")}
+\label{sec:orge3dc68f}
+\begin{itemize}
+\item write data to memory or to I/O device
+\item read data from memory or from I/O device
+\item read instructions from memory
+\item perform internal manipulation of data within processor
+\end{itemize}
+\section{internal data storage of processor = registers}
+\label{sec:org15fe2c9}
+limited number, for current data/operands
+\section{ALU: Arithmetic Logic Unit}
+\label{sec:org52bc62d}
+Control inputs
+\begin{center}
+\begin{tabular}{ll}
+ & \\
+\end{tabular}
+\end{center}
+          VVV
+-operand->
+--carry-->ALU--result->
+-operand->
+\begin{center}
+\begin{tabular}{ll}
+ & \\
+\end{tabular}
+\end{center}
+     VVV
+Status outputs
+
+The ALU performs one operation at a time (e.g. add, sub, not, or, xor, rshift,
+lshift, rotleft, rotright) on operands obtained from registers, placing result
+in a register [or directly to/from memory location]
+Status indicates e.g. if result was zero, negaive, overflow, carry, etc.
+Sometimes separate units are used for mult, division and bit shifting
+\section{Interrupts (= traps = exceptions)}
+\label{sec:org9d2e579}
+divert processor from current program to deal with event, e.g. error from
+peripheral, end of some task from I/O device (e.g. key typed, mouse moved\ldots{})
+it's like a hardware-generated function call
+Interrupts have priorities.
+Effect: save state by pushing registers and program counter onto stack, then
+load \textbf{\textbf{interrupt vector}} into program counter, ie address at which the ISR
+(interrupt service routine) resides, the last instruction of which is a 
+\textbf{\textbf{return from interrupt}} instruction, causing to reload saved state from stack.
+NB: some processors have \textbf{\textbf{shadow registers}} for saving current state instead
+of pushing to stack, saving memory access (and time), but only for a single (not
+multiple) interrupt.
+\subsection{hardware interrupts}
+\label{sec:orgdbe226f}
+the alternative is \textbf{\textbf{busy waiting}} or \textbf{\textbf{polling}}, ie the processor asking the
+device's status register until it's ready (wasting processor's time).
+Simple processors have a single interrupt input for devices, thus triggering
+polling of all devices when one of them generates the interrupt - rather than
+continuously polling.
+More complex processors use \textbf{\textbf{vectored interrupts}}, where the interrupting
+device provides a vector with information about the request, reducing time (can
+provide just device id or more info if both device and processor permit - most
+processors don't)
+\subsection{fast hardware interrupts}
+\label{sec:org588eca6}
+these don't save the whole state but only the program counter, the ISR being
+responsible for manually saving registers if needed; they are triggered by a
+different line and are reserved for I/O devices requiring very fast response
+\subsection{software interrupts}
+\label{sec:orga189433}
+This is the lowest priority interrupt, where a program requests a service from
+the system software (OS or firmware); this is not done as a regular function
+call to ensure compatibility with future versions of the system (where the
+required routine may be at a different memory address)
+\section{CISC vs RISC}
+\label{sec:org2ea98f2}
+CISC: Complex Instruction Set Computer, e.g. intel x86, motorola 68xxx
+RISC: Reduced Instruction Set Computer, e.g. IBM powerpc, MIPS, sun SPARC, ARM
+
+CISC: single processing unit, external memory and small register set but many
+instructions, up to 1000 opcodes or so. Uses less memory as each instruction
+does more, and makes assembly-language programming easier \textbf{but} processors
+become very complicated, and control and instruction decode units become complex
+and slow. This was the trend in the 70s and 80s ("like mainframes but smaller")
+
+RISC: once memory became cheaper, stremalining the instruction set of processors
+made them simpler and faster; also, better compilers make this performant also
+for complex situations: complexity "moved from the silicon to the language
+compiler": keep hardware simple and fast.
+Examples: xor a register with itself <=> clear, so clear not needed as an opcode;
+      load a literal number in register <=> clear, then add number to register
+ so (xor, store, add) can also reproduce (clear reg, clear mem, load literal)
+NB: RISC processors have large register sets (sometimes over 1000!) to reduce
+access to external memory, which helps compilers optimize processor performance.
+Also, all instructions can be of same length, making decoding simpler.
+
+RISC is a load/store architecture: load and store are the only instructions
+refering to memory. Everything else operates on registers. This makes a 1
+intruction/cycle possible and pipelining (queue next instructions) useful.
+
+For embedded systems: prefer RISC to save power or CISC to save program storage space.
+\section{Digital Signal Processors (DSP)}
+\label{sec:orge4a7337}
+processor optimized for numerical processing of array data
+split data and code spaces (like Harvard architecture processors) with several
+separate data banks
+specialized hardware: \textbf{\textbf{hardware looping}} or \textbf{\textbf{zero-overhead looping}}
+increase speed of arithmetics wih "multiply-and-accumulate" (MAC) units and others.
+-> common in embedded applications.
+\section{Memory types}
+\label{sec:org121fd2c}
+\subsection{typical tradeoffs:}
+\label{sec:org2ff1d0a}
+\begin{itemize}
+\item persistent (when power off) but slow
+\item high-capacity but requiring extra support circuity (slowing access)
+\item fast but small
+\end{itemize}
+\subsection{organization}
+\label{sec:org0a0ef3c}
+by bits, nybbles (4 bits), bytes (8 bits) or words (16 or 32 bits)
+Examples, for the same amount of storage:
+-> noted 4M x 1 (4Mb of bit-organized, e.g. DRAM - dynamic RAM)
+-> noted 512K x 8 (512kB of byte-organized, e.g. SRAM - static RAM)
+\subsection{RAM - random access memory\ldots{} is a misnomer}
+\label{sec:org9d7ab17}
+all memory is random-access, really, but RAM stuck as an acronym for "working
+memory", generally \textbf{\textbf{volatile}} (loses contents when power off)
+\begin{itemize}
+\item SRAM is fastest and low consumption but low capacity and expensive; based
+on pairs of \textbf{logic gates}
+\item DRAM based on arrays of \textbf{capacitors}, so need constant refreshing, ie
+constant support; impractical for small \(\mu\)-controllers
+\item cache: local memory (generally) internal to processor, made of very fast
+SRAM
+\end{itemize}
+\subsection{ROM - read-only memory\ldots{} also a misnomer}
+\label{sec:orgdc6b66d}
+\begin{itemize}
+\item many modern ROMs are actually writable\ldots{}
+\item ROM is \textbf{\textbf{non-volatile}}, i.e. needs no power to keep its content
+\item it is generally slower than RAM, definitely much slower than SRAM used
+mostly for \textbf{\textbf{firmware}} (to intialize I/O devices into a known state and
+load an OS from elsewhere)
+\item \(\mu\)-controllers usually have on-chip ROM (simplifies design)
+\item it is essentially made of large arrays of \textbf{diodes}, hence "burning the
+ROM", ie sending large current to "burn" some of the diodes
+\end{itemize}
+\subsection{EPROM vs OTP}
+\label{sec:orgef9e624}
+\begin{itemize}
+\item "erasable programmable" vs "one-time programmable"
+\item EPROM erased via UV light, making it reprogrammable, \textbf{but} must be removed
+from circuit to be erased and erasing is slow (minutes)
+\item disappearing in favour of EEROM
+\end{itemize}
+\subsection{EE[P]ROM}
+\label{sec:org806a09a}
+Electrically Erasable [Programmable] ROM can be erased and reprogrammed
+in-circuit, but has lower capacity than other ROM. Hence good for sys params
+and mode info but less so for firmware. Useful in embedded systems for
+storing network addresses, config settings, serial numbers, etc.
+\subsection{Flash}
+\label{sec:org6f59b4f}
+Newest and currently dominant type of EEROM (a.k.a. "Flash ROM" of "Flash
+RAM").
+Individual sectors can be erased/rewritten independently from each other, ie
+erasing needed as in other ROM but not of the whole device.
+
+\section{Input/Output}
+\label{sec:org2f8dd67}
+Reminder: address space of processor may contain devices other than memory,
+namely I/O devices, a.k.a. \textbf{\textbf{peripherals}}, used to communicate with the
+external world (serial controllers communicating with kbd, mouse, etc;
+parallel for external subsystem; disk-drive controllers; video/audio
+controllers; network interfaces, \ldots{}).
+
+Communication may be Programmed I/O (processor accepts/delivers data when
+convenient) or Interrupt-driven I/O (device requests suspension of current
+program to service it), or Direct Memory Access (DMA), allowing I/O to
+transfer to/from memory directly (granting higher speed, not supported by all
+processors).
+\section{DMA - Direct Memory Access}
+\label{sec:orgb17e405}
+DMAC - DMA Controller does high-speed transfers between memory and I/O devices
+rather than byte-by-byte (or word-by-word) transfer via processor.
+DMAC needs access to address bus and data bus. Usually processor "realeases"
+buses for DMAC to "take over" for a short time.
+There are several types of DMA (see pp 38-39).
+\section{Parallel / Distributed Computers}
+\label{sec:org4f33a49}
+increasingly common: parallel processors in one machine or distributed in
+several communicating (possibly embedded) machines
+von Neumann machine is sequential so program most be translated this way,
+inefficient for many algorithms => parallel processors help speed-up computations
+\textbf{grain}: number of processors -> coarsely grained: a few; finely grained, possibly 10'000 processors
+\subsection{SIMD - Single-Instruction Multiple-Data computer}
+\label{sec:org109cccc}
+Large arrays of simple processors; ex: CM-1 connected to Vax or Sun "host" computer 
+drawback: too specialized (need problems that can be broken down in tiny
+similar calcs)
+\subsection{MIMD - Multiple-Instruction Multiple-Data computer}
+\label{sec:org0626d2e}
+coarsely grained collection of semi-autonomous processors
+\begin{itemize}
+\item shared-memory: each processor has a cache + access to shared main memory
+including table of processes, from where to fetch a process from a queue
+\item message-passing: each processor has its own main memory with its own
+programs to execute; the processors communicate throug a bus (e.g. via
+ethernet)
+=> distributed machine = lossely coupled MIMD, common for embedded machines
+\end{itemize}
+\section{Embedded Computer Architecture}
+\label{sec:orgb6b4ec9}
+\subsection{what determines its functionality: (p.46 -> quote it in project)}
+\label{sec:orgd3841bd}
+\begin{itemize}
+\item what a computer is used for
+\item what tasks it must perform
+\item how humans and other systems interact with it
+\end{itemize}
+\subsection{microcontrollers used as processor}
+\label{sec:org3f703a9}
+incorporate most of the functionality on a single chip
+block diagrams: see p47 and p48
+-> microcontroller has CPU, ROM and/or RAM, some type of I/O, all "subsystem blocks"
+\subsection{GPIO = General-Purpose I/O = digital I/O}
+\label{sec:org9ffeccf}
+same pins can be used as input or output (configured by software)
+-> I: read state of switches or push buttons; read digital status of other device
+-> O: turn external device on/off; convey status to external device
+\subsection{analog inputs}
+\label{sec:org465ee66}
+microcontrollers may have them to allow sampling of sensors (for monitoring
+or recording), e.g. to measure light levels, temperature, vibration,
+accelaration, air or water pressure, humidity, magnetic field, etc\ldots{}
+or just a simple voltage
+\subsection{I/O subsystems (very variable)}
+\label{sec:org61d0cd8}
+\begin{itemize}
+\item serial ports enable mcirocontroller to interface to host computer, modem or
+other embedded system (e.g. to expand functionality) e.g. off-the-chip
+memories, clock/calendar chips, sensors with digital interfaces, external
+analog I/O, audio chips, etc\ldots{}
+\item most microcontrollers already timers and counters used to generate regular
+interrupts for multitasking, triggers for off-chip systems or count
+external triggers (pulses)
+\item some microcontrollers also have USB, ethernet or such network interfaces
+\item some larger \(\mu\)-controllers also have a bus interface allowing
+interfacing with peripherals like a regular processor
+\end{itemize}
+\end{document}

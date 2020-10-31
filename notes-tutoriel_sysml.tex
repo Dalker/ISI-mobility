@@ -1,0 +1,185 @@
+% Created 2020-10-31 sam 14:41
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Dalker}
+\date{\today}
+\title{SysML - notes de DK}
+\hypersetup{
+ pdfauthor={Dalker},
+ pdftitle={SysML - notes de DK},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{sources:}
+\label{sec:orge729a81}
+\begin{itemize}
+\item \url{https://sysml.org/}
+\item \url{https://www.omg.org/spec/SysML/} et notamment un pdf "tutoriel" disponible dans omg.org
+\end{itemize}
+\section{"taxonomie" de différents types de diagrammes}
+\label{sec:orgd52020e}
+-> cf. png extrait du pdf "turoriel" d'omg.org:
+ "behaviour" (activity, sequence, state machine, use case)
+ "requirement"
+ "structure" (block definition, internal block [+ parametric], package)
+\section{Frame}
+\label{sec:orgb345512}
+tout diagramme doit avoir:
+\begin{itemize}
+\item un \textbf{contour} (frame)
+\item une \textbf{en-tête} en haut à gauche indiquant le type de diagramme, le type
+d'élément modélisé et le nom de l'élément modélisé + éventuel nom
+personalisé
+\item une \textbf{description} éventuelle avec no. de version, état d'achèvement
+(completion status), évtl desc et refs
+\end{itemize}
+\section{Structural diagrams}
+\label{sec:org47fb0cd}
+\subsection{package diagram}
+\label{sec:org001df6e}
+organise le modèle; devrait utiliser la relation \textbf{import} pour des
+sous-parties
+\subsection{block}
+\label{sec:org557980b}
+\begin{itemize}
+\item décrit un élément d'un système
+\item le bloc se subdivise en "compartiments" (rectangles emplilés) pour différents
+caractéristiques
+\item based on UML Class + flow ports + value properties
+\end{itemize}
+\subsection{property of a block}
+\label{sec:orgc99eb05}
+\begin{itemize}
+\item part: block inside a composite block (which "owns" it): black diamond in
+bdd, plain rectangle in ibd
+\item reference: block not owned by aggregating block: white diamond in bdd,
+dashed rectangle in ibd
+\item value: number with units or probability distribution
+\end{itemize}
+\subsection{block diagrams (2 types)}
+\label{sec:org60edbc3}
+\begin{itemize}
+\item block definition diagram: relationship between blocks (composition,
+assoiciation, specialization) with usual uml triangle/diamonds
+\item internal block diagram: internal structure of one block (properties and
+connectors) with ports (std or flow)
+\end{itemize}
+\subsection{ports}
+\label{sec:org9cb1e46}
+\begin{itemize}
+\item std (UML): 
+closed circle = provided interface (provides the operation)
+open circle = required interface (calls the operation)
+when connected, simple line
+\item flow (SysML extension):
+little square with arrow pointing out or in
+when connected, black arrow in connecting line
+\end{itemize}
+\subsection{parametrics}
+\label{sec:org54fe164}
+def of constaint: block with title, equation and def of parameters
+param diagram: connectors between equations and parameters are white squares
+inside the plain rectangles (params) or rounded rectangles (equations)
+\section{Behavioural diagrams}
+\label{sec:org254067d}
+\subsection{Activity diagram}
+\label{sec:org864b37d}
+\begin{itemize}
+\item transformation from input to output via sequence of actions
+\item routing flows: fork / join ("and", black rectangle), decision / merge ("or",
+white diamond)
+\item types of flow: 1) object / data, 2) control
+\begin{enumerate}
+\item enters/exits action via plain arrows through attached white squares on
+the sides or above/below
+\item enters/exits action via dashed arrows, vertically, directly to the
+action's rounded rectangle
+\end{enumerate}
+\item unit of flow: "token", consumeed and produced by actionsj
+\item an action can invoke (be zooomed into) another activity
+\item inputs and outputs can be required or optional ("\label{org57d4cfc}"), and
+optionals can also be part of a continuous stream ("\{stream\}")
+\item action starts when token present in all control inputs and all required
+inputs
+\item activity's in/out showed by rectangles crossing frame boundary
+\item special actions: accept event ("bookmark shape") and send signal ("arrow
+shape")
+\item "swimlanes" can be \label{org149fcef}d to separate behaviour
+\end{itemize}
+\subsection{Sequence diagram}
+\label{sec:org6664622}
+for message based behaviour: flow of control, interaction between parts
+\subsection{State machines}
+\label{sec:org75c6104}
+show life cycle of a block
+support behaviour based on events: change / time / signal
+\subsection{Use cases}
+\label{sec:org1081437}
+functinality in terms of usage/goals by actors; no change to UML
+heavy use of \label{orgb8fe610} and \label{orge750f93}
+\section{Allocations and requirements}
+\label{sec:org1566c9f}
+\subsection{allocations}
+\label{sec:org5baac11}
+relations between models:
+\begin{itemize}
+\item behavioural (function to component)
+\item structural (logical to physical)
+\item software to hardware
+\item etc\ldots{}
+\end{itemize}
+Activities may be explicitily allocated to structure via swim lanes (activity partitions)
+\label{org3669108} relation may be used instead (with dashed arrow or on
+super-rectangle), and reverse with \textbf{\textbf{allocatedFrom}} label or property
+\subsection{requirements}
+\label{sec:org8af952a}
+relationships: DeriveReqt, Satisfy, Verify, Refine, Trace, Copy
+client --> supplier relations: if supplier changes, client must adapt
+(i.e. typically client implements something needed by supplier)
+\section{Connecting Model Elements}
+\label{sec:org282e496}
+\begin{itemize}
+\item allocation: \textbf{behaviour} (possibly swimlines) is/are allocated to \textbf{structure} blocks
+\item satisfaction: \textbf{structure} satisfies \textbf{requirements}
+\item parametrics: structure binds them, requirements verify them
+\end{itemize}
+\section{Example: distiller problem -> see p 75 and forward (illustrates all types of diagram)}
+\label{sec:orgbc5796d}
+\section{System Modeling Activities}
+\label{sec:org2465301}
+\begin{itemize}
+\item Analyze needs: causal analysis, mission use cases / scenarii, enterprise model
+\item Define System Requirements: system use cases / scenarii, elaborated context
+\item Define Logical Architecture: Logical decomposition, scenarii and subsystems
+\item Synthesize Allocated Architecture: Node diagram, HW/SW/Data arch, deployment
+\end{itemize}
+\begin{itemize}
+\item also:
+\begin{itemize}
+\item Optimize / Evaluate Alternatives (parametric diagram, etc.)
+\item Manage requirements (req't diagram and/or tables)
+\item Support Validation and Verification (test cases)
+\end{itemize}
+\end{itemize}
+\section{2ème Exemple: système de sécurité de maison, p. 102 et suivantes}
+\label{sec:org957d4f8}
+\end{document}
