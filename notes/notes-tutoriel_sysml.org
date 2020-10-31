@@ -1,7 +1,11 @@
 #+TITLE: SysML - notes de DK
 * sources:
   - https://sysml.org/
-  - https://www.omg.org/spec/SysML/ et notamment un pdf "tutoriel" disponible dans omg.org
+  - https://www.omg.org/spec/SysML/ et notamment un pdf "tutoriel" disponible
+    dans omg.org
+  - http://www.omgsysml.org/INCOSE-OMGSysML-Tutorial-Final-090901.pdf (source
+    principale de ces notes - c'est à elle que se réfèrent les éventuels numéros
+    de page par la suite)
 * "taxonomie" de différents types de diagrammes
   -> cf. png extrait du pdf "turoriel" d'omg.org:
    "behaviour" (activity, sequence, state machine, use case)
@@ -84,7 +88,7 @@
   - etc...
   Activities may be explicitily allocated to structure via swim lanes (activity partitions)
   <<allocate>> relation may be used instead (with dashed arrow or on
-  super-rectangle), and reverse with **allocatedFrom** label or property
+  super-rectangle), and reverse with /allocatedFrom/ label or property
 ** requirements
    relationships: DeriveReqt, Satisfy, Verify, Refine, Trace, Copy
    client --> supplier relations: if supplier changes, client must adapt
