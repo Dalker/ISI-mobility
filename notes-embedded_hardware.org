@@ -38,7 +38,7 @@ Note: the book starts with a quote R. Pirsig's Zen and the Art of Motorcycle Mai
 
 * Processor
   "computing part of the computer", designed to manipulate data as specified by
-  a sequence of instructions (**opcodes** or **machine code**)
+  a sequence of instructions (_opcodes_ or **machine code**)
   Each type of processor has its own **instruction set**
 ** microprocessor vs microcontroller vs SoC
    \mu-proc for desktop, \mu-controller for embedded system with memory on-chip,
