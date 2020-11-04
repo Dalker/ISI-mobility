@@ -1,0 +1,181 @@
+#+TITLE: notes sur "SysML Distilled: A Brief Guide to the Systems Modeling Language"
+#+AUTHOR: Daniel Kessler
+
+* Model-Based Systems Engineering (MBSE)
+  - document-based approach: generate some of the following:
+    - ConOps: concept of operations docs
+    - requirement specifications
+    - etc. -> all disjoint, so costly: changes need to be implemented in every
+      doc and inconsistency is a real risk
+  - system model first, deliverables (docs) later; this requires a modeling tool
+    *model elements* and their relations are defined each in a single place and
+    diagrams are auto-generated /views/.
+  - if no one asks for old-fashioned docs, possible to work on model only and
+    produce software model and even source code directly from system model,
+    i.e. blur the line between design and development
+** three pillars of MBSE
+   - modeling language <-- first of the skills to acquire, only one here (SysML)
+   - modeling method
+   - modeling tool
+   i.e. start with SysML, but that's not the end of it
+** modeling method (\mu-intro):
+   it's like a road map, a documented set of design tasks to do
+   first: *purpose* - why do the model? who will use it and for what?
+   then: *scope* - how much of the environment should be modeled? which parts of
+     the system will be modeled? which behaviours? how deeply will the internal
+     structures and behaviours be decomposed? whicn details are needed, which
+     can be omitted?
+ -> see p.7 for bibliography on common modeling methods
+** modeling tools:
+   OpenSource are Modelio and Papyrus,
+   NB: tried both on my usual Linux distro; Papyrus works, but only with
+   standard UML; SysML would be a plugin which is not trivial to installed
+   (abandoned it); Modelio is outdated / installer doesn't work properly.
+   -> decided to draw diagrams "by hand" instead with diagrams.net, for
+   simplicity and for "hands on" learning of the language
+* Overview of SysML
+  SysML is a *graphical language*, extending a subset of UML
+  ! recommended to "flip Appendix A" for graphical notations if newbie
+  - *bdd*: *block definition diagram* -> system hierarchy trees, classification
+    trees (i.e. show subsystems of a system)
+  - *ibd*: *internal block diagram* -> connections between internal parts of block
+    and interdaces between them
+  - *uc*: *use case diagram*: black-box view of services the system performs with its actors
+  - *act*: *activity diagram*: express desired behaviour of system, focus on flow of
+    control and transformation of inputs into outputs through sequence of
+    actions
+  - *sd*: *sequence diagram*: specify behaviour, e.g. for test cases, focus on
+    inter-block interaction via operation calls and asynchronous signals
+  - *stm*: *state machine diagram*: specify behaviour, focus on states transitions as
+    response to events
+  - *par*: *parametric diagram*: specify constraints
+  - *pkg*: *package diagram*: package hierarchy, dependencies between packages and model elements
+  - *req*: *requirements diagram*: text-based requirements and their relation to model elements
+* general diagram concepts
+  "a diagram of the model is never the model itself; it is merely one view of the model"
+  - a diagram has a *frame*, a *header* and a *contents area*
+    the header contains: diagram kind, model element type, model element name,  diagram name
+    "*dk* [modelElementType] Model Element Name [Diagram Name]"
+  - the model element represented by the diagram defines the *namespace*
+    (container element in model hierarchy) for the other elements shown on the
+    diagram -> model element type and name on header show where the elements on
+    the diagram can be found within the model
+  - the model element can be a structural element (e.g. a package or block) or
+    behavioural element (e.g. activity, interaction or state machine)
+  --> see table of model element / diagram type pairings p. 20
+  - a diagram should be focused, eliding model information outside that focus
+    "you cannot conclude that a feature doesn't exist from its absence on a
+    diagram; it may be shown on another diagram of the model or on no diagram at all."
+* BDDs (block definition diagrams)
+  - it's the most common SysML diagram
+  - it contains *elements of definition*: blocks, actors, value types,
+    constraint blocks, flow specifications and interfaces
+    and *structural relationships* between them: associations, generalizations
+    and dependencies
+  - most common model element type of frame is *package*; also possible are
+    model, modelLibrary, view, block, constraintBlock
+  - *definitions* of types in blocks, value types, constraint blocks
+  - *instances* of types in part properties, value properties, constraint properties
+  => a block is a type, not an instance
+  - *elements of defintion* are named /FooBla/, *elements of usage* are named /BAR:FooBla/
+* Block
+  a block is noted as a rectangle with the *stereotype* <<block>> followed by
+  name, in the required name compartment, possibly followed by optional
+  compartments for features of the block (/constraints/, /values/, parts,
+  references, operations, receptions, full ports, proxy ports, flow properties[,
+  structure]); ports are usually displayed as small squares straddling border of
+  block, others as actual compartments with features
+** Structural features (a.k.a. properties: parts, refs, constraints, value props, ports)
+   - /parts/ compartment lists part properties as "<part name> : <type> [<multiplicity>]"
+     <type> is usually the name of a block defined elsewhere in the system model
+     <multiplicity> looks like [1], [1..2] or [0..*]; if ommitted it defaults to [1]
+     => the part property is a *collection* of instances
+     <part name> is freely defined; it may actually describe the "role" of the instances
+   - /references/ compartment lists reference properties, i.e. structures
+     external to the block "<ref name> : <type> [<mult>]"
+     (e.g. part is "owned", reference is "needed by" block)
+     reference does not show purpose; use an internal block diagram (*ibd*) for that
+   - /values/ compartment has value properties represented quantities of some
+     type, as <value name> : "<type> [<multiplicity>] = <default value>"
+     "= <default value>" is optional
+     <type> is the name of a value type defined elsewhere in the model
+   - /constraints/ properties representing an equation or inequality imposed on
+     some of the value properties (usually not needed in simple modelling)
+     "<constraint name> : <type>" or directly e.g. "{foo >= bar}"
+     -> see <<constraint>> blocks, with /constraints/ such as "{foo >= bar}" and
+     /parameters/ such as "foo : Type", which is what a /constraints/ "<type>"
+     would refer to (useful for more complicated constraints or for refering
+     from several different blocks, but actually recommended for extensibility)
+** Ports
+   - Port interaction point at the boundary of a structure, to request or provede
+     service or to exchange matter, energy or data
+   - A block with port(s) is lie a "black box" relative to its environment ->
+     internal implementation is hidden from its clients, which know only its
+     interface (services it provides and requires, types of matter/energy/data
+     that can flow in and out) i.e. *decoupling* of internals and interface, or
+     *encapsulation* of the block
+     all ports are displayed by a "small square straddling the border of the block"
+     --> in SysML 1.2: standard ports (services) vs. flow ports (matter/energy/data)
+     standard with *provided* interface (stick+ball) and *required* interface (stick+semicircle)
+     assigned <<interfaces>>
+     flow with <> ("nonatomic") or -> <- arrows ("atomic") detailed in
+     <<flowSpecification>>
+     --> in SysML 1.3: non-stereotyped ports (as well as "full ports" and "proxy ports")
+** Behavioural Features: operations and receptions
+   - *operation*: <op name> (<parameter list>) : <return type> [mult] 
+     <op name> should be a verb (e.g. "processCommand")
+     <params> are optional, no need to display all of them
+     behaviour performed by block when called by client via *call event* it is
+     generally a *synchronous* behaviour (caller waits for completion) paramaters
+     are comma-separated <dir> <par name> : <type> [<mult>] = <def val>
+   - *reception*: invoked by a *signal event*, always representing an
+     *asynchronous* behaviour: client doesn't wait
+     the <<signal>> is itself a model element, representing data/matter/energy
+     (possibly defined in-block)
+* Relations
+** Associations: another notation for properties
+   - "reference properties" can be noted as *reference associations*: solid line
+     if bidirectional access; solid line with arrow if unidirectional possible
+     optional: name in the middle of line, at ends: role name (= reference
+     property name at opposite end) and/or multiplicity (e.g. 1, 2..3, ...)
+   - "part properties" can be noted as *composite associations*
+     solid line with black diamond on composite end
+     arrowhead at other end shows uniderectional access from composite to its part
+     only valid multiplicities at composite end are 1 (attached) and 0..1 (component can be removed)
+     0..1 is the default (and 1 is the default on the part end)
+** Generalizations
+   - *subtype* *inherits* from *supertype*
+   - solid line with hollow triangular arrowhead on the supertype end
+   - all features are inherited: both structural and behavioural features
+   - subtype can have other features, so it is a *specialization* of its supertype
+   - a generalitaion is an *abstraction* of its subtypes, defining common features
+   - useful for *substitutability*: a subtype is accepted where a supertype is required
+** Dependencies
+   *client* depends on *supplier*
+   - useful to know which elements may be impacted by a change in another element
+   - rarely displayed on *bdd* (useful for model structure, not for system)
+     if displayed: dashed line with arrow from client to supplier ("depends on")
+     NB: package diagrams often display specialized dependency relationships,
+     e.g. package import, viewpoint conformance, etc.
+* Other elements
+** Actors
+   - actor = someone or something that has an external interface to the system
+   - name of actor coneys *role* when interacting with system
+   - displayed as stick figure (usual for person) or <<actor>> rectangle (usual
+     for external system)
+   - more common in /use case diagrams/ than in BDDs
+   - NB: an actor cannot have parts; it acts as a "black box"
+** Value Types
+   element of definition defining a quantity (type for value property)
+   *primitive* if no internal structure: <<valueType>> rectangle
+   (String, Boolean, Integer, Real already defined, may be specialized)
+   *structured* has two or more value properties <<valueType>> + /values/ compartment
+   *enumerated* defines set of *literals* (legal values)
+** Constraint Blocks
+   element of definition for *constraint expressions* (/constraints/
+   compartment) resulting in a boolean (e.g. equation or inequality) using
+   *constraint parameters* (/parameters/ compartment).
+** Comments
+   free text within a note symbol (rectangle with upper-right corner bent)
+   specialized subtypes: <<diagramDescription>>, <<rationale>> and <<problem>>
+* IBDs (internal block diagrams)
