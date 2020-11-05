@@ -120,6 +120,8 @@
      assigned <<interfaces>>
      flow with <> ("nonatomic") or -> <- arrows ("atomic") detailed in
      <<flowSpecification>>
+     NB: wherever a flow is reversed from what is defined in its flowSpecification, a
+     ~ is placed in front of its name
      --> in SysML 1.3: non-stereotyped ports (as well as "full ports" and "proxy ports")
 ** Behavioural Features: operations and receptions
    - *operation*: <op name> (<parameter list>) : <return type> [mult] 
@@ -179,3 +181,54 @@
    free text within a note symbol (rectangle with upper-right corner bent)
    specialized subtypes: <<diagramDescription>>, <<rationale>> and <<problem>>
 * IBDs (internal block diagrams)
+  *ibd [block] = static structural view of the *configuration* of a single
+  block - possibly the whole system
+  goal: show services and flows between parts
+
+  instead of blocks (as in BDD) it displays /usages/ of blocks, ie part and
+  reference properties and the connections between them, and the flows of
+  data/matter/energy and services provided/required across these *connectors*
+  showing the details of these flows
+  
+  more details: section 4.8+, p68+
+
+  *nesting* is possibly, alternative to:
+  *dot notation* expresses structural hierarchy (to refer to a [part or other]
+  *property of something) but it hides the type and multiplicity of the parent
+* use cases
+  a use case is a behaviour that an external actor can invoke from the system
+  (reminder: actor = person or external system interfacing with our system)
+  a *primary actor* invokes the use case, a *secondary actor* may participate in it
+  the use case is described by a verb from the perspective of the primary actor
+** use case diagram (uc)
+   possible model element types: package, model, modelLibrary, view
+   within frame, show use cases as ovals within the *subject* (rectangle
+   representing the system) connected to external actors that *execute* the use case
+   a base use case can be included by another use case (requirement relationship)
+   -> see details p82+
+** use case specification
+   name (verb), actors, preconditions, guarantees(postconditions), trigger,
+   main success scenario, extensions (alt branches), related information
+-> can be specified by an *activity diagram* after drafting as text (narrative)
+NB: if there seem to be more than one main success scenario, split into several
+   use cases rather than just one
+** scenario
+   A scenario is a path of execution of a use case, so there can be more than
+   one, e.g. main success scenario, error and exception sequences.  each
+   scenario becomes one *sequence diagram* (ie several per activity diagram)
+* system behaviour: activity, sequence and state machine
+3 ways to express sequential and concurrent behaviours over time
+*act*: good for expressing flow of matter/nergy/data, very readable, good for
+  continuous behaviours /but/ a bit ambiguous and doesn't show who invokes which action
+*seq* are more precise
+** activity diagram: possibly a view a of a use case spec
+*act* [activity] (no other model element possible)
+it tells a "narrative" of sequential and concurrent "actions"
+*token flow* abstraction: "Monopoly game piece moving across activity diagram"
+-> *object token*: instance of matter/energy/data flowing (instance of a block,
+   value type or signal)
+-> *control token*: doesn't correspond to anything physical! just the order of actions
+*action*: round-angle with description (verb phrase)
+*object node* for object token: <name> : <type> [<mult>]
+** sequence diagram: possibly a view of a use case scenario
+** state machine diagrams
