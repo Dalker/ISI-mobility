@@ -69,7 +69,7 @@
 * BDDs (block definition diagrams)
   - it's the most common SysML diagram
   - it contains *elements of definition*: blocks, actors, value types,
-    constraint blocks, flow specifications and interfaces
+    constraint blocks, flow specifications and interfaces [and signals!]
     and *structural relationships* between them: associations, generalizations
     and dependencies
   - most common model element type of frame is *package*; also possible are
@@ -228,7 +228,59 @@ it tells a "narrative" of sequential and concurrent "actions"
 -> *object token*: instance of matter/energy/data flowing (instance of a block,
    value type or signal)
 -> *control token*: doesn't correspond to anything physical! just the order of actions
-*action*: round-angle with description (verb phrase)
-*object node* for object token: <name> : <type> [<mult>]
+*** action nodes
+ symbol: round-angle with description (verb phrase), with possible {language}
+ specifier (e.g. {C})
+
+ it acts when a) owning activity is executing, b) all incoming control tokens
+ and lower multiplicity of all object tokens are available
+- *nonstreaming* (default) actions consume/deliver tokens only at start/end of execution
+- *streaming* {stream} receive/produce tokens continuously during execution
+- *call behaviour action*: <action name> : <Behaviour name> encapsulates
+  lower-level behaviour by calling an interaction, state machine (rare) or
+  another activity (shown by "rake symbol"), which must have activity parameters
+  matching the call action's pins
+- *send signal action* asynchronously generates and sends a signal to a target
+  convex pentagon shaped like signpost, containing name of signal defined in
+  model; receiver may be in same or different activity
+- *accept event action* can receive a signal; if it has no incoming edge, then
+  it accepts signals *continually*
+- *wait time action*: hourglass shaped; waits for absolute time and control (in
+  whatever order) or for relative time (like a "sleep" command)
+*** object node / pin / activity parameter
+- *object node* for object token: <name> : <type> [<mult>] in rectangle with
+  possible compartments
+- *pins* are small squares attached outside actions, linked by arrows between
+  objects direction arrow in box is optional (redundant when attached)
+  equivalent but shorter (recommended) than object node, with same type of label
+  <<optional>> must be added above name of pin if lower mult is 0 (eg [0..1] or
+  [0..*])
+- *activity parameter* is an object node overlapping the frame, for input or
+  output of the whole activity it's like a pin for the whole activity (same rule
+  for <<optional>>)
+*** control node
+- *initial node* small filled circle indicates starting point of activity and
+  starts the flow of a control token
+- *flow final node* maks end of the flow of a control token: circle with an X
+- *activity final node*: circle with smaller filled circle terminates activity
+*** edge
+- *object flow* solid line arrow, conveys matter/energy/data tokens can connect
+  to object, merge, fork or join mode at each end upstream type must be same
+  type or subtype of downstream type
+- *control flow* dashed line arrow, conveys control tokens inncoming control goes
+  out of action node after execution
+- *decision node* diamond with one incoming edge and two ore more outfoing ones,
+ labelled each with a *guard* (boolean expression)
+- *merge node* diamond with two or more incoming edges and one outgoing - an
+  incoming token at any edge is offered to the outgoing edge
+- *fork node*: start of concurrent sequences - line segment with one incoming
+  and two or more outgoing edges
+- *join node*: end of concurrent sequences - line segment with one outgoing and
+  several incoming edges: when token arrives on /each/ incoming edge, a single
+  token is offered at outgoind edge
+** activity partitions
+shows structure that performs an action, with large rectangle containing at
+least one node and exactly one header (usually representing a block or part)
 ** sequence diagram: possibly a view of a use case scenario
+
 ** state machine diagrams
