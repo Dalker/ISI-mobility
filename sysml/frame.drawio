@@ -1,1 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2020-11-06T10:23:47.971Z" agent="5.0 (X11)" version="13.8.8" etag="ZlUXbXOLvdduT1lHyklH" type="github"><diagram id="wGFx73DjoDS6JiAtyljR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-06T10:26:59.016Z" agent="5.0 (X11)" etag="_VRfJeikh8Pcbvk9alBJ" version="13.9.2" type="github">
+  <diagram id="wGFx73DjoDS6JiAtyljR" name="Page-1">
+    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Mb1LvoY_Lb1aaftQhDN7-1" value="&lt;div&gt;&lt;b&gt;type&lt;/b&gt; [nom]&lt;/div&gt;" style="html=1;shape=mxgraph.sysml.package;xSize=90;align=left;spacingLeft=10;overflow=fill;strokeWidth=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="260" width="300" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
