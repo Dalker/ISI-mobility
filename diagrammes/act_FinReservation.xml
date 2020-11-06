@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-11-06T19:05:24.060Z" agent="5.0 (X11)" etag="9G60w-Jj8U5k1U1uJt2A" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-06T23:02:11.644Z" agent="5.0 (X11)" etag="tDNpCUp-rY0Ji95bO75x" version="13.9.2" type="github">
   <diagram id="HHK3SBQNQGhX41E3gzWd" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="pMvh3Q98AV8SR1275JUR-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; margin-left: 10px ; text-align: left&quot;&gt;&lt;b&gt;act&lt;/b&gt; [Mettre fin à une réservation]&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;xSize=90;align=left;spacingLeft=10;overflow=fill;strokeWidth=1;recursiveResize=0;labelX=194;verticalAlign=bottom;direction=east;" vertex="1" parent="1">
-          <mxGeometry x="140" y="70" width="660" height="740" as="geometry" />
+          <mxGeometry x="140" y="70" width="660" height="800" as="geometry" />
         </mxCell>
         <mxCell id="pMvh3Q98AV8SR1275JUR-18" value="Déterminer temps restant" style="html=1;shape=mxgraph.sysml.objFlowR;whiteSpace=wrap;rotation=90;horizontal=0;" vertex="1" parent="1">
           <mxGeometry x="395" y="20" width="37.5" height="180" as="geometry" />
@@ -18,10 +18,10 @@
             <mxPoint x="414" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-35" value="Enlever du temps à la réservation" style="html=1;shape=mxgraph.sysml.callBehAct;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+        <mxCell id="pMvh3Q98AV8SR1275JUR-35" value="Diminuer Temps de Réservation" style="html=1;shape=mxgraph.sysml.callBehAct;whiteSpace=wrap;align=center;" vertex="1" parent="1">
           <mxGeometry x="470" y="351.88" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-37" value=": min" style="shape=rect;strokeWidth=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=bottom;spacingLeft=1;fontSize=12;html=1;spacing=2;spacingBottom=-3;spacingRight=0;" vertex="1" parent="1">
+        <mxCell id="pMvh3Q98AV8SR1275JUR-37" value="&lt;div&gt;réduction de temps : &lt;br&gt;&lt;/div&gt;&lt;div&gt;min&lt;/div&gt;" style="shape=rect;strokeWidth=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=bottom;spacingLeft=1;fontSize=12;html=1;spacing=2;spacingBottom=-3;spacingRight=0;" vertex="1" parent="1">
           <mxGeometry x="540.01" y="340" width="20" height="11.88" as="geometry" />
         </mxCell>
         <mxCell id="pMvh3Q98AV8SR1275JUR-39" value="[temps restant &amp;gt;= 30 min]" style="edgeStyle=elbowEdgeStyle;html=1;elbow=horizontal;endArrow=open;labelBackgroundColor=none;strokeWidth=1;endSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;rounded=1;" edge="1" source="pMvh3Q98AV8SR1275JUR-23" target="pMvh3Q98AV8SR1275JUR-55" parent="1">
@@ -36,8 +36,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-61" value="temps à enlever : min" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;endArrow=open;endFill=0;" edge="1" parent="1" source="pMvh3Q98AV8SR1275JUR-55" target="pMvh3Q98AV8SR1275JUR-37">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="pMvh3Q98AV8SR1275JUR-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=12;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="551.0050000000001" y="287.255" as="sourcePoint" />
+            <mxPoint x="551" y="340" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="pMvh3Q98AV8SR1275JUR-55" value="Arrondir à la demi-heure inférieure" style="html=1;shape=mxgraph.sysml.isControl;whiteSpace=wrap;align=center;labelBackgroundColor=none;fontSize=12;rotation=90;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;horizontal=0;" vertex="1" parent="1">
           <mxGeometry x="520.63" y="161.88" width="58.75" height="190" as="geometry" />
@@ -47,20 +50,35 @@
             <mxPoint x="-148" y="35.99999999999999" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="pMvh3Q98AV8SR1275JUR-75" value="&lt;div&gt;status :&lt;/div&gt;&lt;div&gt;boolean&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=open;endFill=0;endSize=12;strokeColor=#000000;strokeWidth=1;fontSize=12;horizontal=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacing=8;spacingTop=0;spacingLeft=-4;" edge="1" parent="1" source="pMvh3Q98AV8SR1275JUR-63" target="pMvh3Q98AV8SR1275JUR-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="pMvh3Q98AV8SR1275JUR-63" value="" style="shape=rhombus;html=1;verticalLabelPosition=top;verticalAlignment=bottom;labelBackgroundColor=none;fontSize=12;align=left;" vertex="1" parent="1">
           <mxGeometry x="395" y="470" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-65" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;elbow=vertical;verticalAlign=bottom;startArrow=open;endArrow=none;rounded=0;labelBackgroundColor=none;startSize=12;fontSize=12;curved=1;" edge="1" source="pMvh3Q98AV8SR1275JUR-63" parent="1" target="pMvh3Q98AV8SR1275JUR-35">
+        <mxCell id="pMvh3Q98AV8SR1275JUR-65" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;elbow=vertical;verticalAlign=bottom;startArrow=open;endArrow=none;rounded=0;labelBackgroundColor=none;startSize=12;fontSize=12;curved=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="pMvh3Q98AV8SR1275JUR-63" parent="1" target="pMvh3Q98AV8SR1275JUR-72">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="560.01" y="460.0000000000001" as="targetPoint" />
+            <mxPoint x="569" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-70" value="[temps restant &amp;lt; 30 min]" style="edgeStyle=none;html=1;endArrow=open;endSize=12;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;horizontal=0;labelPosition=center;verticalLabelPosition=top;align=center;spacingLeft=-38;spacingRight=0;spacingTop=0;spacing=-14;spacingBottom=0;" edge="1" parent="1" source="pMvh3Q98AV8SR1275JUR-23" target="pMvh3Q98AV8SR1275JUR-63">
+        <mxCell id="pMvh3Q98AV8SR1275JUR-70" value="&lt;div&gt;[temps restant&lt;/div&gt;&lt;div&gt;&amp;lt; 30 min]&lt;/div&gt;" style="edgeStyle=none;html=1;endArrow=open;endSize=12;verticalAlign=middle;labelBackgroundColor=none;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;horizontal=1;labelPosition=left;verticalLabelPosition=middle;align=right;spacingLeft=-38;spacingRight=0;spacingTop=0;spacing=20;spacingBottom=0;" edge="1" parent="1" source="pMvh3Q98AV8SR1275JUR-23" target="pMvh3Q98AV8SR1275JUR-63">
           <mxGeometry x="-0.2303" y="16" width="160" relative="1" as="geometry">
             <mxPoint x="420" y="290" as="sourcePoint" />
             <mxPoint x="580" y="290" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="pMvh3Q98AV8SR1275JUR-72" value="&lt;div&gt;status final&amp;nbsp; :&lt;/div&gt;&lt;div&gt;boolean&lt;/div&gt;" style="shape=rect;strokeWidth=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=1;fontSize=12;html=1;spacing=4;spacingBottom=-21;spacingRight=0;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="540.01" y="431.88" width="20" height="11.88" as="geometry" />
+        </mxCell>
+        <mxCell id="pMvh3Q98AV8SR1275JUR-74" value="&lt;div&gt;Confirmer&lt;/div&gt;&lt;div&gt;reddition du&lt;/div&gt;&lt;div&gt;véhicule&lt;br&gt;&lt;/div&gt;" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;labelBackgroundColor=none;strokeWidth=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="660" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pMvh3Q98AV8SR1275JUR-78" value="&lt;div&gt;[status == True]&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=12;strokeColor=#000000;strokeWidth=1;fontSize=12;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacing=7;" edge="1" parent="1" source="pMvh3Q98AV8SR1275JUR-76" target="pMvh3Q98AV8SR1275JUR-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pMvh3Q98AV8SR1275JUR-76" value="" style="shape=rhombus;html=1;verticalLabelPosition=top;verticalAlignment=bottom;labelBackgroundColor=none;fontSize=12;align=left;" vertex="1" parent="1">
+          <mxGeometry x="395" y="565" width="40" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
