@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-06T22:40:05.355Z" agent="5.0 (X11)" etag="V6CFedQeNevK02HjlSx1" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-06T22:42:35.000Z" agent="5.0 (X11)" etag="hEJRjGF62SVKai1H_b1b" version="13.9.2" type="github">
   <diagram id="YJPT1rDflRLRFJDqC_ld" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -15,7 +15,7 @@
         <mxCell id="bVRCrrieyaOB8djRoHw8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;endArrow=openThin;endFill=0;" edge="1" parent="1" source="bVRCrrieyaOB8djRoHw8-6" target="bVRCrrieyaOB8djRoHw8-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bVRCrrieyaOB8djRoHw8-6" value="after (1 min)" style="html=1;shape=mxgraph.sysml.timeEvent;strokeWidth=1;verticalLabelPosition=middle;verticalAlignment=top;labelPosition=right;align=left;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="bVRCrrieyaOB8djRoHw8-6" value="&lt;div&gt;after (max waiting time)&lt;br&gt;&lt;/div&gt;" style="html=1;shape=mxgraph.sysml.timeEvent;strokeWidth=1;verticalLabelPosition=middle;verticalAlignment=top;labelPosition=right;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="212.5" y="320" width="35" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bVRCrrieyaOB8djRoHw8-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=openThin;endFill=0;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="bVRCrrieyaOB8djRoHw8-19" target="bVRCrrieyaOB8djRoHw8-22">
