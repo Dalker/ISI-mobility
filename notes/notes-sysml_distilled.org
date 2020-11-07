@@ -55,7 +55,7 @@
   "a diagram of the model is never the model itself; it is merely one view of the model"
   - a diagram has a *frame*, a *header* and a *contents area*
     the header contains: diagram kind, model element type, model element name,  diagram name
-    "*dk* [modelElementType] Model Element Name [Diagram Name]"
+    "*type* [modelElementType] Model Element Name [Diagram Name]"
   - the model element represented by the diagram defines the *namespace*
     (container element in model hierarchy) for the other elements shown on the
     diagram -> model element type and name on header show where the elements on
