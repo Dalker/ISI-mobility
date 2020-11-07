@@ -1,1 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2020-11-07T22:35:02.220Z" agent="5.0 (X11)" version="13.9.2" etag="8kvUt3aZ8a8qaurahnMS" type="github"><diagram id="uIG5C0WoS7gIbWtlXvRz">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-07T22:44:12.099Z" agent="5.0 (X11)" etag="OPiPaH-07PQSJ_gGzTGY" version="13.9.2" type="github">
+  <diagram id="uIG5C0WoS7gIbWtlXvRz" name="Page-1">
+    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OVOPMZ8urG407LozxkvP-6" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; margin-left: 10px ; text-align: left&quot;&gt;&lt;b&gt;bdd&lt;/b&gt; Composants de l&#39;ordinateur de bord&lt;br&gt;&lt;/p&gt;" style="html=1;strokeWidth=1;shape=mxgraph.sysml.package;labelX=233;align=left;spacingLeft=10;overflow=fill;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="60" width="860" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-7" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Ordinateur&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;de bord&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="120" y="40" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-9" value="part1" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;align=right;html=1;verticalAlign=bottom;endArrow=none;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=none;endFill=0;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="OVOPMZ8urG407LozxkvP-6" source="OVOPMZ8urG407LozxkvP-7" target="OVOPMZ8urG407LozxkvP-14">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="190" y="55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-10" value="1" style="resizable=0;html=1;align=left;verticalAlign=top;labelBackgroundColor=none;fontSize=10" connectable="0" vertex="1" parent="OVOPMZ8urG407LozxkvP-9">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-11" value="0..*" style="resizable=0;html=1;align=right;verticalAlign=top;labelBackgroundColor=none;fontSize=10" connectable="0" vertex="1" parent="OVOPMZ8urG407LozxkvP-9">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-12" value="Block1" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="620" y="120" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-13" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Block&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;" style="shape=rect;html=1;overflow=fill;verticalAlign=top;align=left;whiteSpace=wrap;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="310" y="210" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-14" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;CPU&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="320" y="40" width="100" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
