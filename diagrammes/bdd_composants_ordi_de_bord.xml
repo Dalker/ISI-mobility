@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-08T07:10:57.452Z" agent="5.0 (X11)" etag="Dl24Fpe4QsAB5DlVlnmM" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-08T07:18:27.497Z" agent="5.0 (X11)" etag="JV1SFq1hHoMV45C8LJ3r" version="13.9.2" type="github">
   <diagram id="uIG5C0WoS7gIbWtlXvRz" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -8,10 +8,10 @@
           <mxGeometry x="80" y="40" width="650" height="440" as="geometry" />
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-7" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Ordinateur&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;de bord&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
-          <mxGeometry x="220" y="200" width="110" height="55" as="geometry" />
+          <mxGeometry x="225" y="218.13" width="110" height="55" as="geometry" />
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-14" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;CPU&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
-          <mxGeometry x="225" y="50" width="100" height="50" as="geometry" />
+          <mxGeometry x="230" y="60" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-16" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Bouton&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
           <mxGeometry x="160" y="350" width="100" height="56.5" as="geometry" />
@@ -55,9 +55,6 @@
             <mxPoint x="30.14" y="-23.45" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-41" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Alimentation&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
-          <mxGeometry x="20" y="197.5" width="100" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-43" value="alimentation" style="align=right;html=1;verticalAlign=bottom;endArrow=none;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="OVOPMZ8urG407LozxkvP-6" source="OVOPMZ8urG407LozxkvP-7" target="OVOPMZ8urG407LozxkvP-41" edge="1">
           <mxGeometry x="-0.3333" relative="1" as="geometry">
             <mxPoint x="400" y="270" as="sourcePoint" />
@@ -71,7 +68,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-46" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Contrôleur de&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;CAN bus&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
-          <mxGeometry x="440" y="191.25" width="100" height="72.5" as="geometry" />
+          <mxGeometry x="440" y="191.25" width="100" height="108.75" as="geometry" />
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-47" value="comm" style="align=right;html=1;verticalAlign=bottom;endArrow=none;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="OVOPMZ8urG407LozxkvP-6" source="OVOPMZ8urG407LozxkvP-7" target="OVOPMZ8urG407LozxkvP-46" edge="1">
           <mxGeometry x="0.8182" relative="1" as="geometry">
@@ -114,13 +111,22 @@
             <mxPoint x="170" y="378.25" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="J7rWnMx2eu8tfUyPVB2x-8" value="&amp;lt; &amp;gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="530" y="270" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J7rWnMx2eu8tfUyPVB2x-9" value="&lt;div align=&quot;left&quot;&gt;message :&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Message&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=left;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=-6;spacingRight=0;spacingTop=0;spacingBottom=4;" vertex="1" connectable="0" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="560" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="OVOPMZ8urG407LozxkvP-41" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Alimentation&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
+          <mxGeometry x="30" y="213.75" width="100" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-68" value=": W" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;labelBackgroundColor=none;fontSize=10;paart=1;rotation=0;horizontal=1;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
-          <mxGeometry x="60" y="250" width="20" height="20" as="geometry" />
+          <mxGeometry x="70" y="266.25" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-70" value="" style="endArrow=openThin;html=1;strokeColor=#000000;fontSize=10;endFill=0;" parent="OVOPMZ8urG407LozxkvP-6" edge="1">
-          <mxGeometry x="-50" y="180" width="50" height="50" as="geometry">
-            <mxPoint x="70" y="270" as="sourcePoint" />
-            <mxPoint x="70" y="250" as="targetPoint" />
+          <mxGeometry x="-40" y="196.25" width="50" height="50" as="geometry">
+            <mxPoint x="80" y="286.25" as="sourcePoint" />
+            <mxPoint x="80" y="266.25" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-58" value="&lt;div align=&quot;left&quot;&gt;message :&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Message&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=left;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=-6;spacingRight=0;spacingTop=0;spacingBottom=4;" parent="1" vertex="1" connectable="0">
