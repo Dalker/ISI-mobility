@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-08T06:31:28.400Z" agent="5.0 (X11)" etag="rzuK0b_CoPdrXZFoW381" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-08T06:32:40.342Z" agent="5.0 (X11)" etag="RCSOBoy70aiBSx9dGjqL" version="13.9.2" type="github">
   <diagram id="uIG5C0WoS7gIbWtlXvRz" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -70,7 +70,7 @@
             <mxPoint x="20" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-46" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Interface avec&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;CAN bus&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+        <mxCell id="OVOPMZ8urG407LozxkvP-46" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Contrôleur de&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;CAN bus&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
           <mxGeometry x="440" y="190" width="100" height="72.5" as="geometry" />
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-47" value="can bus" style="align=right;html=1;verticalAlign=bottom;endArrow=none;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="OVOPMZ8urG407LozxkvP-6" source="OVOPMZ8urG407LozxkvP-7" target="OVOPMZ8urG407LozxkvP-46">
@@ -125,12 +125,7 @@
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-58" value="dataIO : Message" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=8;spacingRight=0;spacingTop=0;spacingBottom=8;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="0.225" y="-2" relative="1" as="geometry">
-            <mxPoint x="663" y="299" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-61" value="Text" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="0.225" y="-2" relative="1" as="geometry">
-            <mxPoint x="560" y="290" as="offset" />
+            <mxPoint x="671" y="289" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
