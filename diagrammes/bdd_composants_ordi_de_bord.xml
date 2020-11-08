@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-08T07:27:15.934Z" agent="5.0 (X11)" etag="bVLLYrZElZiE4ySgoAmL" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-08T07:46:54.653Z" agent="5.0 (X11)" etag="uTvpmYZUIWonx8dAlpcP" version="13.9.2" type="github">
   <diagram id="uIG5C0WoS7gIbWtlXvRz" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -93,7 +93,7 @@
             <mxPoint x="-3" y="-40" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-81" value="&lt;div&gt;text : string&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;labelBackgroundColor=none;fontSize=10;paart=1;rotation=90;horizontal=0;spacing=3;spacingBottom=0;spacingTop=-1;spacingLeft=35;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
+        <mxCell id="OVOPMZ8urG407LozxkvP-81" value="&lt;div&gt;affichage&lt;/div&gt;&lt;div&gt;: string&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;labelBackgroundColor=none;fontSize=10;paart=1;rotation=90;horizontal=0;spacing=3;spacingBottom=0;spacingTop=-8;spacingLeft=26;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
           <mxGeometry x="390" y="328.25" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-82" value="" style="endArrow=openThin;html=1;strokeColor=#000000;fontSize=10;endFill=0;" parent="OVOPMZ8urG407LozxkvP-6" edge="1">
