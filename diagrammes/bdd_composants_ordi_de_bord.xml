@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-08T06:35:03.379Z" agent="5.0 (X11)" etag="4UMoRMaomYu0bxWSKklU" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-08T06:45:50.013Z" agent="5.0 (X11)" etag="9XlNp15m6csrLzcnmBDs" version="13.9.2" type="github">
   <diagram id="uIG5C0WoS7gIbWtlXvRz" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -91,7 +91,7 @@
         <mxCell id="OVOPMZ8urG407LozxkvP-59" value="&amp;lt; &amp;gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
           <mxGeometry x="530" y="200" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-60" value="status : Status de la voiture" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;" vertex="1" connectable="0" parent="OVOPMZ8urG407LozxkvP-6">
+        <mxCell id="OVOPMZ8urG407LozxkvP-60" value="status : Status de la voiture" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacingLeft=-4;" vertex="1" connectable="0" parent="OVOPMZ8urG407LozxkvP-6">
           <mxGeometry x="620" y="250" as="geometry">
             <mxPoint x="-3" y="-40" as="offset" />
           </mxGeometry>
@@ -123,7 +123,7 @@
             <mxPoint x="70" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-58" value="dataIO : Message" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=8;spacingRight=0;spacingTop=0;spacingBottom=8;" vertex="1" connectable="0" parent="1">
+        <mxCell id="OVOPMZ8urG407LozxkvP-58" value="message : Message" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=17;spacingRight=0;spacingTop=0;spacingBottom=8;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="0.225" y="-2" relative="1" as="geometry">
             <mxPoint x="671" y="289" as="offset" />
           </mxGeometry>
