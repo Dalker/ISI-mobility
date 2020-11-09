@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-08T10:38:18.600Z" agent="5.0 (X11)" etag="nGekVS8VgzIFKUOsWunJ" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-09T17:50:29.532Z" agent="5.0 (X11)" etag="ZmNYClaoQTX-nReJ3tQl" version="13.9.2" type="github">
   <diagram id="uIG5C0WoS7gIbWtlXvRz" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -85,14 +85,6 @@
         <mxCell id="OVOPMZ8urG407LozxkvP-52" value="&amp;lt; &amp;gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
           <mxGeometry x="520" y="195" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-59" value="&amp;lt; &amp;gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
-          <mxGeometry x="520" y="160" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-60" value="&lt;div align=&quot;left&quot;&gt;statusIn :&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Status de la voiture&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacingLeft=-4;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1" connectable="0">
-          <mxGeometry x="590" y="210" as="geometry">
-            <mxPoint x="-3" y="-40" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-81" value="&lt;div&gt;affichage&lt;/div&gt;&lt;div&gt;: String&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;labelBackgroundColor=none;fontSize=10;paart=1;rotation=90;horizontal=0;spacing=3;spacingBottom=0;spacingTop=-8;spacingLeft=26;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
           <mxGeometry x="390" y="328.25" width="20" height="20" as="geometry" />
         </mxCell>
@@ -111,10 +103,10 @@
             <mxPoint x="160" y="338.25" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J7rWnMx2eu8tfUyPVB2x-8" value="&amp;lt; &amp;gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+        <mxCell id="J7rWnMx2eu8tfUyPVB2x-8" value="&amp;lt; &amp;gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
           <mxGeometry x="520" y="230" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="J7rWnMx2eu8tfUyPVB2x-9" value="&lt;div&gt;messageOut&lt;/div&gt;&lt;div&gt;: Message&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=left;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=-6;spacingRight=0;spacingTop=0;spacingBottom=4;" vertex="1" connectable="0" parent="OVOPMZ8urG407LozxkvP-6">
+        <mxCell id="J7rWnMx2eu8tfUyPVB2x-9" value="&lt;div&gt;messageOut&lt;/div&gt;&lt;div&gt;: Message&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=left;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=-6;spacingRight=0;spacingTop=0;spacingBottom=4;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1" connectable="0">
           <mxGeometry x="540" y="250" as="geometry">
             <mxPoint x="8" y="-41" as="offset" />
           </mxGeometry>
@@ -129,6 +121,15 @@
           <mxGeometry x="-50" y="156.25" width="50" height="50" as="geometry">
             <mxPoint x="70" y="246.25" as="sourcePoint" />
             <mxPoint x="70" y="226.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCvfNJJDq19N8x26IXi5-1" value="&lt;div&gt;distanceParcourue&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;: km&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=left;verticalAlign=middle;labelPosition=right;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;rotation=0;horizontal=1;spacing=4;spacingBottom=0;spacingTop=0;spacingLeft=0;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="520" y="158.13" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OCvfNJJDq19N8x26IXi5-2" value="" style="endArrow=none;html=1;strokeColor=#000000;fontSize=10;endFill=0;startArrow=openThin;startFill=0;" edge="1" parent="OVOPMZ8urG407LozxkvP-6">
+          <mxGeometry x="510" y="158.13" width="50" height="50" as="geometry">
+            <mxPoint x="520" y="168.13" as="sourcePoint" />
+            <mxPoint x="540" y="168.13" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-58" value="&lt;div&gt;messageIn&lt;br&gt;&lt;/div&gt;&lt;div&gt;: Message&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;points=[];align=left;verticalAlign=middle;labelBackgroundColor=#ffffff;fontSize=10;spacing=2;spacingLeft=-6;spacingRight=0;spacingTop=0;spacingBottom=4;" parent="1" vertex="1" connectable="0">
