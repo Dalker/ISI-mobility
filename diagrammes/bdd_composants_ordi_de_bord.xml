@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-09T17:50:29.532Z" agent="5.0 (X11)" etag="ZmNYClaoQTX-nReJ3tQl" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-09T17:54:30.265Z" agent="5.0 (X11)" etag="GrjU0mIcEothPWalIdnZ" version="13.9.2" type="github">
   <diagram id="uIG5C0WoS7gIbWtlXvRz" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -113,15 +113,6 @@
         </mxCell>
         <mxCell id="OVOPMZ8urG407LozxkvP-41" value="&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Alimentation&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;/span&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;fontStyle=1;html=1;whiteSpace=wrap;align=center;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
           <mxGeometry x="20" y="173.75" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-68" value=": W" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;labelBackgroundColor=none;fontSize=10;paart=1;rotation=0;horizontal=1;" parent="OVOPMZ8urG407LozxkvP-6" vertex="1">
-          <mxGeometry x="60" y="226.25" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="OVOPMZ8urG407LozxkvP-70" value="" style="endArrow=openThin;html=1;strokeColor=#000000;fontSize=10;endFill=0;" parent="OVOPMZ8urG407LozxkvP-6" edge="1">
-          <mxGeometry x="-50" y="156.25" width="50" height="50" as="geometry">
-            <mxPoint x="70" y="246.25" as="sourcePoint" />
-            <mxPoint x="70" y="226.25" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="OCvfNJJDq19N8x26IXi5-1" value="&lt;div&gt;distanceParcourue&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;: km&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;points=[[0,0.5,0]];html=1;resizable=1;align=left;verticalAlign=middle;labelPosition=right;verticalLabelPosition=middle;labelBackgroundColor=none;fontSize=10;paart=1;rotation=0;horizontal=1;spacing=4;spacingBottom=0;spacingTop=0;spacingLeft=0;" vertex="1" parent="OVOPMZ8urG407LozxkvP-6">
           <mxGeometry x="520" y="158.13" width="20" height="20" as="geometry" />
