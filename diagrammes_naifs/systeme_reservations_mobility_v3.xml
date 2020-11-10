@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-11-10T19:44:54.214Z" agent="5.0 (X11)" etag="0kmWkSwu2iaHJrSv8vDU" version="13.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-10T22:37:24.871Z" agent="5.0 (X11)" etag="_ybJmpwJAMs9CHs5TzUu" version="13.9.3" type="github">
   <diagram id="cOLmSlAWod5i39gfgbxi" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="7sEI-zRsgUNPSHA1VXng-50" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=15;" parent="1" vertex="1">
-          <mxGeometry x="110" y="30" width="990" height="700" as="geometry" />
+          <mxGeometry x="100" y="40" width="990" height="700" as="geometry" />
         </mxCell>
         <mxCell id="7sEI-zRsgUNPSHA1VXng-48" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="460" y="531" width="380" height="159" as="geometry" />
@@ -16,11 +16,12 @@
         <mxCell id="7sEI-zRsgUNPSHA1VXng-49" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="740" y="90" width="340" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="v1xcd2SCjNtcgmivi-jh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.31;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="6p3K5oz6cmId7FXufXgp-1" target="7sEI-zRsgUNPSHA1VXng-7" edge="1">
+        <mxCell id="v1xcd2SCjNtcgmivi-jh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;entryX=0.31;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6p3K5oz6cmId7FXufXgp-1" target="6p3K5oz6cmId7FXufXgp-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="547" y="420" />
             </Array>
+            <mxPoint x="510" y="424" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="v1xcd2SCjNtcgmivi-jh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="7sEI-zRsgUNPSHA1VXng-2" target="Y4YjRNFN3PHVFKzCeITM-10" edge="1">
@@ -44,7 +45,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="780" y="440" />
-              <mxPoint x="606" y="440" />
+              <mxPoint x="686" y="440" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -73,7 +74,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="7sEI-zRsgUNPSHA1VXng-7" value="internet" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="510" y="290" width="120" height="80" as="geometry" />
+          <mxGeometry x="590" y="250" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="7sEI-zRsgUNPSHA1VXng-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="7sEI-zRsgUNPSHA1VXng-10" target="7sEI-zRsgUNPSHA1VXng-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -85,7 +86,7 @@
             <mxPoint x="472" y="200.10000000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7sEI-zRsgUNPSHA1VXng-10" value="récepteur GPS dans voiture de mode &quot;Go&quot;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+        <mxCell id="7sEI-zRsgUNPSHA1VXng-10" value="récepteur GPS (dans voiture de mode &quot;Go&quot;)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="170" y="205" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="7sEI-zRsgUNPSHA1VXng-45" value="Centrale" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontStyle=1;fontSize=15;" parent="1" vertex="1">
@@ -112,7 +113,7 @@
         <mxCell id="VqxxedG_kfS6nHI9V_Xk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="VqxxedG_kfS6nHI9V_Xk-3" target="VqxxedG_kfS6nHI9V_Xk-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VqxxedG_kfS6nHI9V_Xk-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.625;exitY=0.2;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classicThin;startFill=1;exitPerimeter=0;" parent="1" source="7sEI-zRsgUNPSHA1VXng-7" target="VqxxedG_kfS6nHI9V_Xk-6" edge="1">
+        <mxCell id="VqxxedG_kfS6nHI9V_Xk-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.4;exitY=0.1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classicThin;startFill=1;exitPerimeter=0;" parent="1" source="7sEI-zRsgUNPSHA1VXng-7" target="VqxxedG_kfS6nHI9V_Xk-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VqxxedG_kfS6nHI9V_Xk-3" value="&lt;div&gt;serveur &lt;br&gt;&lt;/div&gt;&lt;div&gt;central&lt;/div&gt;&lt;div&gt;de Mobility&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
@@ -122,19 +123,30 @@
           <mxGeometry x="170" y="60" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="VqxxedG_kfS6nHI9V_Xk-6" value="&lt;br&gt;&lt;div&gt;base de donnée&lt;/div&gt;&lt;div&gt;géographique (Google)&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="530" y="120" width="110" height="85" as="geometry" />
+          <mxGeometry x="583" y="105" width="110" height="85" as="geometry" />
         </mxCell>
-        <mxCell id="VqxxedG_kfS6nHI9V_Xk-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="VqxxedG_kfS6nHI9V_Xk-8" target="7sEI-zRsgUNPSHA1VXng-2" edge="1">
+        <mxCell id="VqxxedG_kfS6nHI9V_Xk-12" value="CAN bus" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;verticalAlign=bottom;" parent="1" source="VqxxedG_kfS6nHI9V_Xk-8" target="7sEI-zRsgUNPSHA1VXng-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VqxxedG_kfS6nHI9V_Xk-8" value="senseurs divers (carburant, odomètre, etc.)&lt;br&gt;via CAN bus" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" parent="1" vertex="1">
+        <mxCell id="VqxxedG_kfS6nHI9V_Xk-8" value="senseurs divers (carburant, odomètre, etc.)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="320" y="205" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="6p3K5oz6cmId7FXufXgp-1" value="Modem&lt;br&gt;(GPRS)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="6p3K5oz6cmId7FXufXgp-1" value="Modem" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="310" y="370" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="6p3K5oz6cmId7FXufXgp-5" value="Voiture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontStyle=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="275" y="650" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6p3K5oz6cmId7FXufXgp-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;exitX=0.4;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="6p3K5oz6cmId7FXufXgp-6" target="7sEI-zRsgUNPSHA1VXng-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="364" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="558" y="282" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6p3K5oz6cmId7FXufXgp-6" value="&lt;div&gt;réseau&lt;/div&gt;&lt;div&gt;GSM/GPRS&lt;br&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="320" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
