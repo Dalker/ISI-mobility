@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-11T06:09:32.891Z" agent="5.0 (X11)" etag="LK14qlMJml9jJFmK7WfA" version="13.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-11T06:13:03.639Z" agent="5.0 (X11)" etag="3u_NqgF2AcAEp1IfbUMN" version="13.9.3" type="github">
   <diagram id="cOLmSlAWod5i39gfgbxi" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -81,7 +81,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="7sEI-zRsgUNPSHA1VXng-10" value="récepteur GPS (dans voiture de mode &quot;Go&quot;)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="160" y="270" width="100" height="100" as="geometry" />
+          <mxGeometry x="170" y="270" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="7sEI-zRsgUNPSHA1VXng-45" value="Centrale" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontStyle=1;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="890" y="100" width="40" height="20" as="geometry" />
