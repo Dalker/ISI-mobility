@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-12T17:03:54.814Z" agent="5.0 (X11)" etag="w7R_E7xUQCssV7Jsesxi" version="13.9.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-12T17:04:23.751Z" agent="5.0 (X11)" etag="6P164Wfum26zDvGDwi4z" version="13.9.7" type="github">
   <diagram id="YJPT1rDflRLRFJDqC_ld" name="Page-1">
     <mxGraphModel dx="1102" dy="597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -131,7 +131,7 @@
         <mxCell id="tZXyEtetRbX-JMobWswg-2" value="&lt;div&gt;Afficher refus&lt;/div&gt;&lt;div&gt;de modification&lt;br&gt;&lt;/div&gt;" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
           <mxGeometry x="335" y="360" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tZXyEtetRbX-JMobWswg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tZXyEtetRbX-JMobWswg-5" target="bVRCrrieyaOB8djRoHw8-27">
+        <mxCell id="tZXyEtetRbX-JMobWswg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=openThin;endFill=0;" edge="1" parent="1" source="tZXyEtetRbX-JMobWswg-5" target="bVRCrrieyaOB8djRoHw8-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="tZXyEtetRbX-JMobWswg-5" value="&lt;div&gt;statusFinal : Boolean&lt;/div&gt;" style="shape=rect;html=1;align=left;labelPosition=right;verticalLabelPosition=middle;verticalAlign=bottom;horizontal=1;" vertex="1" parent="1">
