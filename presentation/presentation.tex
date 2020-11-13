@@ -1,0 +1,57 @@
+\documentclass[17pt]{beamer}
+\usepackage[size=a4]{beamerposter}
+\usepackage{multirow}
+\definecolor{cerulean}{rgb}{.1,0.3,0.6} 
+\definecolor{yred}{rgb}{.8,0,0}
+\beamertemplatenavigationsymbolsempty
+\makeatletter
+\renewcommand\Huge{\fontsize{26}{15}\selectfont}
+\renewcommand\huge{\fontsize{22}{10}\selectfont}
+\renewcommand\Large{\fontsize{17}{10}\selectfont}
+\makeatother
+\newcommand\slide[2][.85]{
+  \begin{frame}
+    \begin{tabular}{lr}
+    {\Huge\textcolor{cerulean}{\parbox{.8\textwidth}{\textbf{\slidetitle}}}}&
+    \multirow{2}{*}{\includegraphics[width=.1\textwidth]{logo_ordi.png}}\\
+    \begin{tabular}{c}
+      \vtop{\null\hbox{\includegraphics[width=#1\textwidth]{#2}}}
+    \end{tabular} 
+    \end{tabular}
+  \end{frame}
+}
+\newcommand\slideb[1]{
+  \slide[.65]{#1}
+}
+
+\begin{document}
+%\slide{slide0.1.png}
+%\slide{slide0.2.png}
+%\slide{slide0.3.png}
+\def\slidetitle{Zoom sur un composant\ :\;\huge ordinateur embarqué ``classique''\par\phantom+}
+\slide{slide0.4.png}
+\slide{slide1.png}
+\slide{slide2.1.png}
+\def\slidetitle{Exemple de fonctionnalité\ :\;\huge modifier une réservation\par\phantom+}
+\slide{slide2.1.png}
+\def\slidetitle{Exemple de fonctionnalité\ :\;\huge modifier une réservation\par
+  \color{yred}{{\Large 1.} Demande du client}}
+\slide{slide2.2.png}
+\slide{ordi_de_bord_still1.png}
+\slide{slide2.2.png}
+\def\slidetitle{Exemple de fonctionnalité\ :\;\huge modifier une réservation\par
+  \color{yred}{{\Large 2.} Demande au serveur}}
+\slide{slide2.3.png}
+\slideb{slide3.8.png}
+\slideb{slide3.7.png}
+\slideb{slide3.6.png}
+\slideb{slide3.5.png}
+\slideb{slide3.4.png}
+\slideb{slide3.45.png}
+\slideb{slide3.35.png}
+\slideb{slide3.3.png}
+\slideb{slide3.2.png}
+\slideb{slide3.1.png}
+\slideb{slide3.9.png}
+\slideb{slide4.png}
+\end{document}
