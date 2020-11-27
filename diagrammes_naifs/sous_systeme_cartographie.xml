@@ -1,0 +1,33 @@
+<mxfile host="app.diagrams.net" modified="2020-11-27T10:37:18.062Z" agent="5.0 (X11)" etag="-yseuJKLFAoZv3MRS4Rr" version="13.10.4" type="github">
+  <diagram id="cOLmSlAWod5i39gfgbxi" name="Page-1">
+    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7sEI-zRsgUNPSHA1VXng-33" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;strokeColor=#000000;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7sEI-zRsgUNPSHA1VXng-3" target="7sEI-zRsgUNPSHA1VXng-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="597" y="364" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="656" y="420" />
+              <mxPoint x="601" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7sEI-zRsgUNPSHA1VXng-3" value="application sur smartphone" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="606" y="460" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7sEI-zRsgUNPSHA1VXng-7" value="internet" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="535" y="276" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqxxedG_kfS6nHI9V_Xk-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.4;exitY=0.1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classicThin;startFill=1;exitPerimeter=0;" parent="1" source="7sEI-zRsgUNPSHA1VXng-7" target="VqxxedG_kfS6nHI9V_Xk-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqxxedG_kfS6nHI9V_Xk-6" value="&lt;br&gt;&lt;div&gt;base de donnée&lt;/div&gt;&lt;div&gt;géographique (Google)&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="528" y="130" width="110" height="85" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
