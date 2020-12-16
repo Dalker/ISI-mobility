@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile etag="KVMeRyzRrBJXlRQEQJ73" agent="5.0 (X11)" modified="2020-12-16T21:22:24.935Z" host="app.diagrams.net" version="14.0.4" type="google">
+  <diagram id="Wj3gtP3hlfW9BG_Biwq4" name="Page-1">
+    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bPptzEFlxbv-KxSXyCr6-10" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; margin-left: 10px ; text-align: left&quot;&gt;&lt;b&gt;stm États de l&#39;ordinateur de bord&lt;br&gt;&lt;/b&gt;&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;xSize=90;align=left;spacingLeft=10;overflow=fill;strokeWidth=1;recursiveResize=0;labelX=202;" parent="1" vertex="1">
+          <mxGeometry x="110" y="20" width="880" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-32" value="fin réservation" style="edgeStyle=orthogonalEdgeStyle;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=267.5;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=6;verticalAlign=bottom;spacingLeft=-12;" parent="1" source="S3bqjAhQzpwQwfgsqQ4I-4" target="S3bqjAhQzpwQwfgsqQ4I-30" edge="1">
+          <mxGeometry x="-0.2967" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="348" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-4" value="Réservation active&#xa;" style="shape=mxgraph.sysml.compState;align=left;verticalAlign=top;spacingTop=-3;spacingLeft=18;strokeWidth=1;recursiveResize=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="80" width="550" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-35" style="edgeStyle=orthogonalEdgeStyle;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=220;exitDy=192.5;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=6;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="S3bqjAhQzpwQwfgsqQ4I-37" target="S3bqjAhQzpwQwfgsqQ4I-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="252.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-36" value="verrouillage&lt;br&gt;par carte RFID" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];spacingTop=0;spacing=5;" parent="S3bqjAhQzpwQwfgsqQ4I-35" vertex="1" connectable="0">
+          <mxGeometry x="-0.3173" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-33" value="Déverrouillable&lt;br&gt;par client" style="shape=rect;rounded=1;html=1;whiteSpace=wrap;align=center;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
+          <mxGeometry x="370" y="105" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-37" value="Véhicule déverrouillé" style="shape=folder;align=center;verticalAlign=middle;fontStyle=0;tabWidth=130;tabHeight=20;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;rounded=1;absoluteArcSize=1;arcSize=10;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
+          <mxGeometry x="20" y="50" width="220" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-16" value="Ordinateur&lt;br&gt;interactif" style="shape=rect;rounded=1;html=1;whiteSpace=wrap;align=center;arcSize=20;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
+          <mxGeometry x="50" y="115" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-28" value="demande vers centrale" style="edgeStyle=orthogonalEdgeStyle;curved=1;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endSize=6;verticalAlign=bottom;horizontal=0;fontSize=11;spacing=2;spacingTop=0;spacingBottom=0;spacingLeft=-4;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="S3bqjAhQzpwQwfgsqQ4I-16" target="S3bqjAhQzpwQwfgsqQ4I-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-29" value="message de centrale" style="edgeStyle=orthogonalEdgeStyle;curved=1;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=6;horizontal=0;verticalAlign=bottom;spacingLeft=-3;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="S3bqjAhQzpwQwfgsqQ4I-17" target="S3bqjAhQzpwQwfgsqQ4I-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-34" value="déverrouillage&lt;br&gt;par carte RFID" style="edgeStyle=orthogonalEdgeStyle;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=6;spacing=2;spacingTop=0;verticalAlign=bottom;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="S3bqjAhQzpwQwfgsqQ4I-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uER_K4yhjQ_B_uoVBURT-5" value="[after&lt;i&gt; (timeout)&lt;/i&gt;]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontSize=11;horizontal=0;verticalAlign=top;spacingLeft=3;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="S3bqjAhQzpwQwfgsqQ4I-17" target="S3bqjAhQzpwQwfgsqQ4I-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-17" value="Ordinateur&lt;br&gt;informatif" style="shape=rect;rounded=1;html=1;whiteSpace=wrap;align=center;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
+          <mxGeometry x="50" y="290" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uER_K4yhjQ_B_uoVBURT-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="uER_K4yhjQ_B_uoVBURT-1" target="S3bqjAhQzpwQwfgsqQ4I-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uER_K4yhjQ_B_uoVBURT-1" value="" style="shape=ellipse;html=1;fillColor=#000000;fontSize=18;fontColor=#ffffff;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
+          <mxGeometry x="200" y="123.75" width="20" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uER_K4yhjQ_B_uoVBURT-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="uER_K4yhjQ_B_uoVBURT-3" target="S3bqjAhQzpwQwfgsqQ4I-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uER_K4yhjQ_B_uoVBURT-3" value="" style="shape=ellipse;html=1;fillColor=#000000;fontSize=18;fontColor=#ffffff;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
+          <mxGeometry x="500" y="122.5" width="20" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="S3bqjAhQzpwQwfgsqQ4I-4" target="S3bqjAhQzpwQwfgsqQ4I-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-31" value="annonce prochaine réservation" style="edgeStyle=orthogonalEdgeStyle;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endSize=6;entryX=1;entryY=0;entryDx=0;entryDy=102.5;entryPerimeter=0;verticalAlign=bottom;" parent="1" source="S3bqjAhQzpwQwfgsqQ4I-30" target="S3bqjAhQzpwQwfgsqQ4I-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880" y="183" />
+              <mxPoint x="775" y="183" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-30" value="Véhicule&lt;br&gt;totalement verrouillé" style="shape=rect;rounded=1;html=1;whiteSpace=wrap;align=center;" parent="1" vertex="1">
+          <mxGeometry x="820" y="230" width="120" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
