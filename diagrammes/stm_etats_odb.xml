@@ -1,6 +1,6 @@
-<mxfile etag="6cV39DfxJjbqCQ_r-1Dd" agent="5.0 (Windows)" modified="2020-12-18T09:36:12.688Z" host="app.diagrams.net" version="14.0.5" type="github">
+<mxfile etag="csQ8XoD5KvXhxEl1j07P" agent="5.0 (X11)" modified="2020-12-19T09:50:19.105Z" host="app.diagrams.net" version="14.1.1" type="github">
   <diagram id="Wj3gtP3hlfW9BG_Biwq4" name="Page-1">
-    <mxGraphModel dx="1186" dy="735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -51,7 +51,7 @@
         <mxCell id="uER_K4yhjQ_B_uoVBURT-5" value="[after&lt;i&gt; (timeout)&lt;/i&gt;]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontSize=11;horizontal=0;verticalAlign=top;spacingLeft=3;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="S3bqjAhQzpwQwfgsqQ4I-17" target="S3bqjAhQzpwQwfgsqQ4I-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-17" value="Affichage non interactif" style="shape=rect;rounded=1;html=1;whiteSpace=wrap;align=center;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
+        <mxCell id="S3bqjAhQzpwQwfgsqQ4I-17" value="Affichage informatif" style="shape=rect;rounded=1;html=1;whiteSpace=wrap;align=center;" parent="S3bqjAhQzpwQwfgsqQ4I-4" vertex="1">
           <mxGeometry x="50" y="290" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="uER_K4yhjQ_B_uoVBURT-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="S3bqjAhQzpwQwfgsqQ4I-4" source="uER_K4yhjQ_B_uoVBURT-1" target="S3bqjAhQzpwQwfgsqQ4I-16" edge="1">
