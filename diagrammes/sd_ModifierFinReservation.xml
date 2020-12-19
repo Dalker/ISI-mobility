@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-19T16:12:13.047Z" agent="5.0 (X11)" etag="lnmy5OghMpDypyyf4qR5" version="14.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-19T16:15:39.999Z" agent="5.0 (X11)" etag="7xoXsam6bLyx5xM1gIiN" version="14.1.1" type="github">
   <diagram id="QSOzKDTAG-cBAX-61qHl" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="iKdWMSCrvm6-0voqS73S-18" value="Voiture" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
           <mxGeometry x="40" y="40" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-19" value="Centrale" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
+        <mxCell id="iKdWMSCrvm6-0voqS73S-19" value="Centrale" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;dashed=1;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
           <mxGeometry x="314" y="40" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iKdWMSCrvm6-0voqS73S-21" value="alt" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;html=1;shape=mxgraph.sysml.package;labelX=35;fontStyle=1;align=left;verticalAlign=top;spacingLeft=5;spacingTop=-3;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
