@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-19T16:11:15.695Z" agent="5.0 (X11)" etag="k416Lp0HjNuNUG6obNTp" version="14.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-19T16:12:13.047Z" agent="5.0 (X11)" etag="lnmy5OghMpDypyyf4qR5" version="14.1.1" type="github">
   <diagram id="QSOzKDTAG-cBAX-61qHl" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -34,7 +34,7 @@
         </mxCell>
         <mxCell id="iKdWMSCrvm6-0voqS73S-26" value="[if modificationAccepted]" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
           <mxGeometry x="-0.0909" relative="1" as="geometry">
-            <mxPoint x="350" y="180" as="sourcePoint" />
+            <mxPoint x="354" y="180" as="sourcePoint" />
             <mxPoint x="80" y="180" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
@@ -47,12 +47,12 @@
         <mxCell id="iKdWMSCrvm6-0voqS73S-30" value="&lt;div&gt;Demande de modification&lt;/div&gt;&lt;div&gt;de réservation (dateFin)&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;endSize=12;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="80" y="100" as="sourcePoint" />
-            <mxPoint x="360" y="100" as="targetPoint" />
+            <mxPoint x="354" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iKdWMSCrvm6-0voqS73S-28" value="[else]" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;align=right;endSize=12;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
           <mxGeometry x="-0.037" relative="1" as="geometry">
-            <mxPoint x="350" y="290" as="sourcePoint" />
+            <mxPoint x="354" y="290" as="sourcePoint" />
             <mxPoint x="80" y="290" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
