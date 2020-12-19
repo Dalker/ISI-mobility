@@ -1,10 +1,10 @@
-<mxfile etag="csQ8XoD5KvXhxEl1j07P" agent="5.0 (X11)" modified="2020-12-19T09:50:19.105Z" host="app.diagrams.net" version="14.1.1" type="github">
+<mxfile etag="lHZsqm2l0tUizVq1RjOc" agent="5.0 (X11)" modified="2020-12-19T10:21:30.959Z" host="app.diagrams.net" version="14.1.1" type="github">
   <diagram id="Wj3gtP3hlfW9BG_Biwq4" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="bPptzEFlxbv-KxSXyCr6-10" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; margin-left: 10px ; text-align: left&quot;&gt;&lt;b&gt;stm États de l&#39;ordinateur de bord&lt;br&gt;&lt;/b&gt;&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;xSize=90;align=left;spacingLeft=10;overflow=fill;strokeWidth=1;recursiveResize=0;labelX=202;" parent="1" vertex="1">
+        <mxCell id="bPptzEFlxbv-KxSXyCr6-10" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; margin-left: 10px ; text-align: left&quot;&gt;&lt;b&gt;stm &lt;/b&gt;États de l&#39;ordinateur de bord&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;xSize=90;align=left;spacingLeft=10;overflow=fill;strokeWidth=1;recursiveResize=0;labelX=202;" parent="1" vertex="1">
           <mxGeometry x="110" y="20" width="830" height="480" as="geometry" />
         </mxCell>
         <mxCell id="S3bqjAhQzpwQwfgsqQ4I-32" value="fin réservation" style="edgeStyle=orthogonalEdgeStyle;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=267.5;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=6;verticalAlign=bottom;spacingLeft=-12;" parent="1" source="S3bqjAhQzpwQwfgsqQ4I-4" target="S3bqjAhQzpwQwfgsqQ4I-30" edge="1">
