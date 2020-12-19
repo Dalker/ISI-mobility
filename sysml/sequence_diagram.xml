@@ -1,1 +1,78 @@
-<mxfile host="app.diagrams.net" modified="2020-12-19T16:22:26.382Z" agent="5.0 (X11)" version="14.1.1" etag="rARo0mxdyyiqmlIPRQgc" type="github"><diagram id="yXhZ5fo873spedIkRnQp">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-19T16:26:33.850Z" agent="5.0 (X11)" etag="g6-IJ-0IHzjxZ6-epQoj" version="14.1.1" type="github">
+  <diagram id="yXhZ5fo873spedIkRnQp" name="Page-1">
+    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-15" value="alt" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;html=1;shape=mxgraph.sysml.package;labelX=35;fontStyle=1;align=left;verticalAlign=top;spacingLeft=5;spacingTop=-3;" vertex="1" parent="1">
+          <mxGeometry x="650" y="130" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-16" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="310" as="targetPoint" />
+            <mxPoint x="700" y="110" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-17" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="310" as="targetPoint" />
+            <mxPoint x="810" y="110" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-18" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="210" as="targetPoint" />
+            <mxPoint x="850" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-19" value="[condition]" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;endSize=12;" edge="1" parent="1">
+          <mxGeometry x="0.0909" relative="1" as="geometry">
+            <mxPoint x="700" y="190" as="sourcePoint" />
+            <mxPoint x="810" y="190" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-20" value="msg1" style="align=right;html=1;verticalAlign=bottom;labelBackgroundColor=none;" connectable="0" vertex="1" parent="tyA6eGeoocwm-BVU0HpU-19">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-40" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-21" value="[else]" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;align=right;endSize=12;" edge="1" parent="1">
+          <mxGeometry x="0.2727" relative="1" as="geometry">
+            <mxPoint x="700" y="270" as="sourcePoint" />
+            <mxPoint x="810" y="270" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-22" value="msg2" style="align=right;html=1;verticalAlign=bottom;labelBackgroundColor=none;" connectable="0" vertex="1" parent="tyA6eGeoocwm-BVU0HpU-21">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-40" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-40" value="Bloc 2" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="540" y="140" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-39" value="Bloc 1" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="430" y="140" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-41" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" edge="1" parent="1" source="tyA6eGeoocwm-BVU0HpU-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-42" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="250" as="targetPoint" />
+            <mxPoint x="580" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tyA6eGeoocwm-BVU0HpU-43" value="message" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;endSize=12;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="210" as="sourcePoint" />
+            <mxPoint x="580" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
