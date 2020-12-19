@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-19T13:13:18.132Z" agent="5.0 (X11)" etag="7LTM3Dxr4NJTRZycC6vr" version="14.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-19T15:20:09.932Z" agent="5.0 (X11)" etag="VNP29kNSvpb25DBBEnid" version="14.1.1" type="github">
   <diagram id="HHK3SBQNQGhX41E3gzWd" name="Page-1">
-    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1102" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -18,10 +18,10 @@
             <mxPoint x="414" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-35" value="Réduire Durée de Réservation" style="html=1;shape=mxgraph.sysml.callBehAct;whiteSpace=wrap;align=center;" parent="1" vertex="1">
+        <mxCell id="pMvh3Q98AV8SR1275JUR-35" value="&lt;div&gt;Modifier Fin &lt;br&gt;&lt;/div&gt;&lt;div&gt;de Réservation&lt;/div&gt;" style="html=1;shape=mxgraph.sysml.callBehAct;whiteSpace=wrap;align=center;" parent="1" vertex="1">
           <mxGeometry x="470" y="351.88" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-37" value="&lt;div&gt;réductionDurée : &lt;br&gt;&lt;/div&gt;&lt;div&gt;min&lt;/div&gt;" style="shape=rect;strokeWidth=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=bottom;spacingLeft=1;fontSize=12;html=1;spacing=2;spacingBottom=-3;spacingRight=0;" parent="1" vertex="1">
+        <mxCell id="pMvh3Q98AV8SR1275JUR-37" value="dateFin : Date" style="shape=rect;strokeWidth=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=bottom;spacingLeft=1;fontSize=12;html=1;spacing=2;spacingBottom=-3;spacingRight=0;" parent="1" vertex="1">
           <mxGeometry x="540.01" y="340" width="20" height="11.88" as="geometry" />
         </mxCell>
         <mxCell id="pMvh3Q98AV8SR1275JUR-39" value="[temps restant &amp;gt;= 30 min]" style="edgeStyle=elbowEdgeStyle;html=1;elbow=horizontal;endArrow=open;labelBackgroundColor=none;strokeWidth=1;endSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;rounded=1;" parent="1" source="pMvh3Q98AV8SR1275JUR-23" target="pMvh3Q98AV8SR1275JUR-55" edge="1">
@@ -42,13 +42,8 @@
             <mxPoint x="551" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-55" value="Arrondir à la demi-heure inférieure" style="html=1;shape=mxgraph.sysml.isControl;whiteSpace=wrap;align=center;labelBackgroundColor=none;fontSize=12;rotation=90;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;horizontal=0;" parent="1" vertex="1">
-          <mxGeometry x="520.63" y="170" width="58.75" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-56" value="tempsRestant : min" style="resizable=0;html=1;align=center;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;labelBackgroundColor=none;spacingRight=61;rotation=90;horizontal=0;spacingLeft=0;spacing=5;spacingTop=0;" parent="pMvh3Q98AV8SR1275JUR-55" connectable="0" vertex="1">
-          <mxGeometry x="84.01353205972774" y="206.83333333333331" as="geometry">
-            <mxPoint x="-148" y="35.99999999999999" as="offset" />
-          </mxGeometry>
+        <mxCell id="pMvh3Q98AV8SR1275JUR-55" value="Calculer nouvelle date de fin" style="html=1;shape=mxgraph.sysml.isControl;whiteSpace=wrap;align=center;labelBackgroundColor=none;fontSize=12;rotation=90;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;horizontal=0;" parent="1" vertex="1">
+          <mxGeometry x="520.63" y="188.76" width="58.75" height="163.12" as="geometry" />
         </mxCell>
         <mxCell id="pMvh3Q98AV8SR1275JUR-104" style="edgeStyle=none;rounded=1;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#000000;strokeWidth=1;fontSize=12;" parent="1" source="pMvh3Q98AV8SR1275JUR-63" target="pMvh3Q98AV8SR1275JUR-95" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -61,7 +56,7 @@
             <mxPoint x="569" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pMvh3Q98AV8SR1275JUR-70" value="&lt;div&gt;[tempsRestant&lt;/div&gt;&lt;div&gt;&amp;lt; 30 min]&lt;/div&gt;" style="edgeStyle=none;html=1;endArrow=open;endSize=12;verticalAlign=middle;labelBackgroundColor=none;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;horizontal=1;labelPosition=left;verticalLabelPosition=middle;align=right;spacingLeft=-38;spacingRight=0;spacingTop=0;spacing=20;spacingBottom=0;" parent="1" source="pMvh3Q98AV8SR1275JUR-23" target="pMvh3Q98AV8SR1275JUR-63" edge="1">
+        <mxCell id="pMvh3Q98AV8SR1275JUR-70" value="&lt;div&gt;[tempsRestant &amp;lt; 30 min]&lt;/div&gt;" style="edgeStyle=none;html=1;endArrow=open;endSize=12;verticalAlign=middle;labelBackgroundColor=none;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;horizontal=1;labelPosition=left;verticalLabelPosition=middle;align=right;spacingLeft=-38;spacingRight=0;spacingTop=0;spacing=20;spacingBottom=0;" parent="1" source="pMvh3Q98AV8SR1275JUR-23" target="pMvh3Q98AV8SR1275JUR-63" edge="1">
           <mxGeometry x="-0.2303" y="16" width="160" relative="1" as="geometry">
             <mxPoint x="420" y="290" as="sourcePoint" />
             <mxPoint x="580" y="290" as="targetPoint" />
@@ -155,8 +150,16 @@
         <mxCell id="pMvh3Q98AV8SR1275JUR-112" value="" style="html=1;shape=mxgraph.sysml.actFinal;strokeWidth=2;verticalLabelPosition=bottom;verticalAlignment=top;labelBackgroundColor=none;fontSize=12;align=left;" parent="1" vertex="1">
           <mxGeometry x="400.26" y="811.5" width="18.74" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="g3Z70AyQH5QIYzvdST51-2" value="" style="shape=rect;html=1;fillColor=#000000;verticalLabelPosition=bottom;verticalAlignment=top;strokeWidth=1;rotation=90;" vertex="1" parent="1">
+        <mxCell id="g3Z70AyQH5QIYzvdST51-2" value="" style="shape=rect;html=1;fillColor=#000000;verticalLabelPosition=bottom;verticalAlignment=top;strokeWidth=1;rotation=90;" parent="1" vertex="1">
           <mxGeometry x="414" y="620" width="5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YZ7IS0cG371xnduJvCPg-1" value="tempsRestant : min" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingLeft=-10;" vertex="1" parent="1">
+          <mxGeometry x="560.01" y="230" width="119.99" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YZ7IS0cG371xnduJvCPg-2" value="dateFin : Date" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="0.225" y="-2" relative="1" as="geometry">
+            <mxPoint x="600" y="300" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
