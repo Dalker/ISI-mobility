@@ -1,67 +1,65 @@
-<mxfile host="app.diagrams.net" modified="2020-12-19T15:55:45.322Z" agent="5.0 (X11)" etag="MD6bFfgbootPdnjKqaJO" version="14.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-19T16:11:15.695Z" agent="5.0 (X11)" etag="k416Lp0HjNuNUG6obNTp" version="14.1.1" type="github">
   <diagram id="QSOzKDTAG-cBAX-61qHl" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="iKdWMSCrvm6-0voqS73S-17" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; margin-left: 10px ; text-align: left&quot;&gt;&lt;b&gt;sd&lt;/b&gt; Modifier Fin de Réservation&lt;br&gt;&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;labelX=212;html=1;overflow=fill;strokeWidth=1;recursiveResize=0;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="60" y="20" width="440" height="410" as="geometry" />
+          <mxGeometry x="90" y="30" width="440" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-18" value="b1: Block1" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
-          <mxGeometry x="30" y="40" width="80" height="30" as="geometry" />
+        <mxCell id="iKdWMSCrvm6-0voqS73S-18" value="Voiture" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
+          <mxGeometry x="40" y="40" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-19" value="b2: Block2" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
-          <mxGeometry x="140" y="40" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-20" value="b3: Block3" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
-          <mxGeometry x="250" y="40" width="80" height="30" as="geometry" />
+        <mxCell id="iKdWMSCrvm6-0voqS73S-19" value="Centrale" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;shape=rect;html=1;whiteSpace=wrap;align=center;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
+          <mxGeometry x="314" y="40" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iKdWMSCrvm6-0voqS73S-21" value="alt" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;html=1;shape=mxgraph.sysml.package;labelX=35;fontStyle=1;align=left;verticalAlign=top;spacingLeft=5;spacingTop=-3;" parent="iKdWMSCrvm6-0voqS73S-17" vertex="1">
-          <mxGeometry x="20" y="90" width="200" height="160" as="geometry" />
+          <mxGeometry x="30" y="140" width="380" height="200" as="geometry" />
         </mxCell>
         <mxCell id="iKdWMSCrvm6-0voqS73S-22" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" parent="iKdWMSCrvm6-0voqS73S-17" source="iKdWMSCrvm6-0voqS73S-18" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="70" y="300" as="targetPoint" />
+            <mxPoint x="80" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iKdWMSCrvm6-0voqS73S-23" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" parent="iKdWMSCrvm6-0voqS73S-17" source="iKdWMSCrvm6-0voqS73S-19" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="300" as="targetPoint" />
+            <mxPoint x="354" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-24" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" parent="iKdWMSCrvm6-0voqS73S-17" source="iKdWMSCrvm6-0voqS73S-20" edge="1">
+        <mxCell id="iKdWMSCrvm6-0voqS73S-25" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1" target="iKdWMSCrvm6-0voqS73S-21" source="iKdWMSCrvm6-0voqS73S-21">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="290" y="300" as="targetPoint" />
+            <mxPoint x="30" y="220" as="targetPoint" />
+            <mxPoint x="230" y="220" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-25" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=none;html=1;edgeStyle=none;dashed=1;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
+        <mxCell id="iKdWMSCrvm6-0voqS73S-26" value="[if modificationAccepted]" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
+          <mxGeometry x="-0.0909" relative="1" as="geometry">
+            <mxPoint x="350" y="180" as="sourcePoint" />
+            <mxPoint x="80" y="180" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iKdWMSCrvm6-0voqS73S-27" value="&lt;div&gt;Confirmation de modification&lt;/div&gt;&lt;div&gt;de réservation (réponse = True)&lt;br&gt;&lt;/div&gt;" style="align=center;html=1;verticalAlign=bottom;labelBackgroundColor=none;" parent="iKdWMSCrvm6-0voqS73S-26" connectable="0" vertex="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="130" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iKdWMSCrvm6-0voqS73S-30" value="&lt;div&gt;Demande de modification&lt;/div&gt;&lt;div&gt;de réservation (dateFin)&lt;br&gt;&lt;/div&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;endSize=12;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="20" y="170" as="targetPoint" />
-            <mxPoint x="220" y="170" as="sourcePoint" />
+            <mxPoint x="80" y="100" as="sourcePoint" />
+            <mxPoint x="360" y="100" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-26" value="[if x &lt; 10]" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;endSize=12;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
-          <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="70" y="150" as="sourcePoint" />
-            <mxPoint x="180" y="150" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-27" value="msg1" style="align=right;html=1;verticalAlign=bottom;labelBackgroundColor=none;" parent="iKdWMSCrvm6-0voqS73S-26" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iKdWMSCrvm6-0voqS73S-28" value="[else]" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;align=right;endSize=12;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
-          <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="70" y="230" as="sourcePoint" />
-            <mxPoint x="180" y="230" as="targetPoint" />
+          <mxGeometry x="-0.037" relative="1" as="geometry">
+            <mxPoint x="350" y="290" as="sourcePoint" />
+            <mxPoint x="80" y="290" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-29" value="msg2" style="align=right;html=1;verticalAlign=bottom;labelBackgroundColor=none;" parent="iKdWMSCrvm6-0voqS73S-28" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="iKdWMSCrvm6-0voqS73S-30" value="msg3" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;endArrow=open;html=1;edgeStyle=none;verticalAlign=bottom;labelBackgroundColor=none;endSize=12;" parent="iKdWMSCrvm6-0voqS73S-17" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="70" y="290" as="sourcePoint" />
-            <mxPoint x="290" y="290" as="targetPoint" />
+        <mxCell id="iKdWMSCrvm6-0voqS73S-29" value="&lt;div&gt;Confirmation de modification&lt;/div&gt;&lt;div&gt;de réservation (réponse = False)&lt;br&gt;&lt;/div&gt;" style="align=center;html=1;verticalAlign=bottom;labelBackgroundColor=none;" parent="iKdWMSCrvm6-0voqS73S-28" connectable="0" vertex="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="130" y="40" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
