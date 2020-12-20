@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-20T09:25:59.341Z" agent="5.0 (X11)" etag="e3SEBJlBZCwOunidPzG4" version="14.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-20T09:37:44.363Z" agent="5.0 (X11)" etag="uO5Y2_cmssmroOmrH9Ho" version="14.1.1" type="github">
   <diagram id="10IIVJ4jIcLO3f1eUX44" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -14,7 +14,7 @@
           <mxGeometry x="130" y="230" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJix6Bpf5GbGzloy6tIz-8" value="&lt;div&gt;Modifier Fin&lt;/div&gt;&lt;div&gt;de Réservation&lt;br&gt;&lt;/div&gt;" style="shape=ellipse;html=1;strokeWidth=2;fontStyle=0;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" parent="1" vertex="1">
-          <mxGeometry x="490" y="150" width="120" height="60" as="geometry" />
+          <mxGeometry x="490" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJix6Bpf5GbGzloy6tIz-11" value="&lt;div&gt;Réduire Durée&lt;/div&gt;&lt;div&gt;de Réservation&lt;br&gt;&lt;/div&gt;" style="shape=ellipse;html=1;strokeWidth=2;fontStyle=0;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" parent="1" vertex="1">
           <mxGeometry x="330" y="220" width="120" height="60" as="geometry" />
@@ -60,16 +60,16 @@
         <mxCell id="y_Aa_OsvtDnyqWfsm7m2-1" value="&lt;div&gt;Augmenter Durée&lt;br&gt;&lt;/div&gt;&lt;div&gt;de Réservation&lt;br&gt;&lt;/div&gt;" style="shape=ellipse;html=1;strokeWidth=2;fontStyle=0;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" vertex="1" parent="1">
           <mxGeometry x="330" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="y_Aa_OsvtDnyqWfsm7m2-2" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="FJix6Bpf5GbGzloy6tIz-11" target="FJix6Bpf5GbGzloy6tIz-8">
+        <mxCell id="y_Aa_OsvtDnyqWfsm7m2-2" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FJix6Bpf5GbGzloy6tIz-11" target="FJix6Bpf5GbGzloy6tIz-8">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="480" y="320" as="sourcePoint" />
             <mxPoint x="640" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y_Aa_OsvtDnyqWfsm7m2-3" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="y_Aa_OsvtDnyqWfsm7m2-1" target="FJix6Bpf5GbGzloy6tIz-8">
+        <mxCell id="y_Aa_OsvtDnyqWfsm7m2-3" value="" style="edgeStyle=none;html=1;endArrow=block;endFill=0;endSize=12;verticalAlign=bottom;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="y_Aa_OsvtDnyqWfsm7m2-1" target="FJix6Bpf5GbGzloy6tIz-8">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="380" y="270" as="sourcePoint" />
-            <mxPoint x="417.57359312880703" y="181.21320343559648" as="targetPoint" />
+            <mxPoint x="490" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="y_Aa_OsvtDnyqWfsm7m2-5" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FJix6Bpf5GbGzloy6tIz-1" target="y_Aa_OsvtDnyqWfsm7m2-1">
